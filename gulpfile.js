@@ -7,31 +7,31 @@ var gulp = require('gulp'),
 	browserSync = require('browser-sync');
 
 gulp.task('coffee', function () {
-	gulp.src('coffee/**/*.coffee')
+	gulp.src('public/coffee/**/*.coffee')
 		.pipe(sourcemaps.init())
 		.pipe(coffee().on('error', gutil.log))
 		.pipe(sourcemaps.write('./maps'))
-		.pipe(gulp.dest('js'))
+		.pipe(gulp.dest('public/js'))
 		.pipe(browserSync.reload({stream:true, once: true}));
 });
 
 gulp.task('myth', function () {
-	gulp.src('myth/**/*.css')
+	gulp.src('public/myth/**/*.css')
 		.pipe(myth())
-		.pipe(gulp.dest('css'))
+		.pipe(gulp.dest('public/css'))
 		.pipe(minifycss({
 			keepBreaks: true,
 			root: 'css',
 			processImport: true
 		}))
-		.pipe(gulp.dest('css'))
+		.pipe(gulp.dest('public/css'))
 		.pipe(browserSync.reload({stream:true}));
 });
 
 gulp.task('browser-sync', function() {
     browserSync.init(null, {
         server: {
-            baseDir: "./"
+            baseDir: "./public"
         },
         ports: {
         	min: 5000,
@@ -47,6 +47,6 @@ gulp.task('default', function () {
 });
 
 gulp.task('watch', function() {
-	gulp.watch('coffee/**/*.coffee', ['coffee']);
-	gulp.watch('myth/**/*.css', ['myth']);
+	gulp.watch('public/coffee/**/*.coffee', ['coffee']);
+	gulp.watch('public/myth/**/*.css', ['myth']);
 });
