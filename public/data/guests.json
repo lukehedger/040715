@@ -1,0 +1,12 @@
+{
+	"guests": [
+		{
+			"name": "Jane & Peter",
+			"code": "jandp"
+		},
+		{
+			"name": "Catherine & Steve",
+			"code": "cands"
+		}		
+	]
+}

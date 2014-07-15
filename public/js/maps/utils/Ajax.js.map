@@ -1,0 +1,1 @@
+{"version":3,"file":"utils/Ajax.js","names":[],"mappings":"","sources":["utils/Ajax.coffee"],"sourcesContent":["define [\"jquery\"], ($) ->\n\n\tclass Ajax\n\n\t\t@get: (url,success,error) ->\n\n\t\t\t$.ajax\n\t\t\t\turl: url\n\t\t\t\ttype: \"GET\"\n\t\t\t\tdataType: \"json\"\n\t\t\t\tsuccess: success\n\t\t\t\terror: error"],"sourceRoot":"/source/"}

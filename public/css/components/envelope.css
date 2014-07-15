@@ -1,0 +1,6 @@
+.back,.envelope,.flap,.front,.pocket{width:100%;height:100%;text-align:center;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;position:relative}
+.back,.front{-webkit-backface-visibility:hidden;backface-visibility:hidden;position:absolute;top:0;left:0}
+.front{padding-top:20px;background-color:coral;z-index:100}
+.back,.flap,.pocket{background-color:#0f0}
+.pocket{height:300px;position:absolute;bottom:0;z-index:30}
+.flap{height:100px;z-index:10}

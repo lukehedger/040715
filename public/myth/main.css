@@ -3,4 +3,6 @@
 @import "lib/print.css";
 @import "lib/typography.css";
 @import "components/app.css";
+@import "components/card.css";
+@import "components/envelope.css";
 @import "components/responsive.css";

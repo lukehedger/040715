@@ -1,10 +1,15 @@
 (function() {
   require.config({
     paths: {
-      "jquery": "../vendor/jquery"
+      "jquery": "../vendor/jquery",
+      "TweenMax": "../vendor/TweenMax.min",
+      "TimelineMax": "../vendor/TimelineMax.min"
     },
     shim: {
-      app: ["jquery"]
+      app: ["jquery"],
+      "TimelineMax": {
+        exports: "TimelineMax"
+      }
     }
   });
 

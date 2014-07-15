@@ -6,3 +6,9 @@
 	margin-bottom: 100px;
 	padding:0 5%;
 }
+
+.card-container {
+	width: 700px;
+	height: 400px;
+	margin: 0 auto;
+}

@@ -1,12 +1,12 @@
 require.config
 	paths:
 		"jquery": "../vendor/jquery"
-		# "custom": "custom"
+		"TweenMax": "../vendor/TweenMax.min"
+		"TimelineMax": "../vendor/TimelineMax.min"
 
 	shim:
 		app: ["jquery"]
-		# custom: 
-		# 	exports: "custom"
-
+		"TimelineMax":
+			exports: "TimelineMax"
 
 require ["app"], (App) -> new App()
