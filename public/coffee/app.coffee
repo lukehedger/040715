@@ -23,6 +23,7 @@ define [
 			else
 				console.log "You don't got no code"
 				# boot off
+				$(".front").html ("Your name's not on the list")
 
 		_getGuestsData: ->
 

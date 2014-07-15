@@ -21,6 +21,7 @@
           this._getGuestsData();
         } else {
           console.log("You don't got no code");
+          $(".front").html("Your name's not on the list");
         }
       }
 
