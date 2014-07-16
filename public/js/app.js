@@ -108,18 +108,17 @@
         }));
         card.add(TweenMax.to(".card", 0.75, {
           rotation: 25,
-          y: -1000,
+          y: -600,
           delay: 0.5
         }));
         card.add(TweenMax.set(".card", {
           zIndex: 30,
           boxShadow: "0 0 10px #999",
-          delay: 0.5
+          delay: 0.1
         }));
         return card.add(TweenMax.to(".card", 0.5, {
           y: -150,
-          rotation: 0,
-          delay: 0.5
+          rotation: 0
         }));
       };
 

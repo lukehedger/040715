@@ -12,8 +12,18 @@
 
 + Install Gulp: `npm install -g gulp`
 + Install Gulp Dependencies: `npm install --save-dev`
++ Install Divshot CLI: `npm install -g divshot-cli`
++ 
+
+## Local dev
+
 + Compile, watch and serve: `gulp`
-+ Stop watching: `ctrl + c`
++ Stop server/watching: `ctrl + c`
+
+## Deployment
+
++ Push to Divshot: `divshot push <env>`
++ Promote to environment: `divshot promote <from_env> <to_env>`
 
 ## Status
 
