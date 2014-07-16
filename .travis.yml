@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '0.10'
+- '0.8'
+- '0.6'
+deploy:
+  provider: divshot
+  environment:
+    master: development
+    staging: staging
+    production: production
+  skip_cleanup: true
+  api_key:
+    secure: xE/GYN03VE2VZug1Pr9b+ePqmnoEXk18+d3pwA3EXUnK9DD/QlOy2OM6kEjkeleZEJtshKMwI1Ki+cH+aI+EvX90N6X0iHa8f4XSzvynjZGKtH5ktqN1mHknKqF83UBSohIp3Vy+V3LY/U9Eozsp5Tq+GhFOoAjY7wCEOVKVhbA=
