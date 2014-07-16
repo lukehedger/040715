@@ -14,3 +14,7 @@
 + Install Gulp Dependencies: `npm install --save-dev`
 + Compile, watch and serve: `gulp`
 + Stop watching: `ctrl + c`
+
+## Status
+
+[![Build Status](https://travis-ci.org/lukehedger/040715.svg?branch=master)](https://travis-ci.org/lukehedger/040715)

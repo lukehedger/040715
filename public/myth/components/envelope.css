@@ -43,4 +43,5 @@
 .flap {
 	height: 100px;
 	z-index: 10;
+	border-top: 1px solid black;
 }

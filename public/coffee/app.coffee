@@ -78,7 +78,7 @@ define [
 
 			flap = new TimelineMax()
 
-			flap.add TweenMax.to(".envelope", 1, {y:100})
+			flap.add TweenMax.to(".envelope", 0.5, {y:100})
 			flap.add TweenMax.to(".card", 0, {autoAlpha:1})
 			flap.add TweenMax.to(".flap", 1, {rotationX:180, transformOrigin:"0 0"})
 			
@@ -88,6 +88,10 @@ define [
 
 		_showCard: ->
 
-			TweenMax.to ".card", 0.5, {y:-100, height:"+=100"}
-			TweenMax.to ".paper", 0.5, {y:400}
+			card = new TimelineMax()
+
+			card.add TweenMax.to(".card", 0.5, {y:-100, height:"+=100"})
+			card.add TweenMax.to(".card", 0.75, {rotation:25, y:-1000, delay: 0.5})
+			card.add TweenMax.set(".card", {zIndex:30, boxShadow: "0 0 10px #999", delay:0.5})
+			card.add TweenMax.to(".card", 0.5, {y:-150, rotation:0, delay:0.5})
 

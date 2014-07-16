@@ -82,7 +82,7 @@
       App.prototype._openEnvelope = function() {
         var flap;
         flap = new TimelineMax();
-        flap.add(TweenMax.to(".envelope", 1, {
+        flap.add(TweenMax.to(".envelope", 0.5, {
           y: 100
         }));
         flap.add(TweenMax.to(".card", 0, {
@@ -100,13 +100,27 @@
       };
 
       App.prototype._showCard = function() {
-        TweenMax.to(".card", 0.5, {
+        var card;
+        card = new TimelineMax();
+        card.add(TweenMax.to(".card", 0.5, {
           y: -100,
           height: "+=100"
-        });
-        return TweenMax.to(".paper", 0.5, {
-          y: 400
-        });
+        }));
+        card.add(TweenMax.to(".card", 0.75, {
+          rotation: 25,
+          y: -1000,
+          delay: 0.5
+        }));
+        card.add(TweenMax.set(".card", {
+          zIndex: 30,
+          boxShadow: "0 0 10px #999",
+          delay: 0.5
+        }));
+        return card.add(TweenMax.to(".card", 0.5, {
+          y: -150,
+          rotation: 0,
+          delay: 0.5
+        }));
       };
 
       return App;
