@@ -14,7 +14,7 @@
         this._onCardContainerHover = __bind(this._onCardContainerHover, this);
         this._onGuestsDataSuccess = __bind(this._onGuestsDataSuccess, this);
         var search;
-        console.log('Bayse up and running...');
+        console.log('040715 up and running...');
         search = window.location.search;
         if ((search != null) && search !== "") {
           this._code = search.match(/\?(.*)/)[1];
