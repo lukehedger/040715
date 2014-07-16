@@ -13,7 +13,7 @@ define [
 
 		constructor: ->
 
-			console.log 'Bayse up and running...'
+			console.log '040715 up and running...'
 
 			search = window.location.search
 
