@@ -51,7 +51,7 @@ hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padd
 audio,canvas,img,video{vertical-align:middle}
 fieldset{border:0;margin:0;padding:0}
 textarea{resize:vertical}
-.grid{width:80%;margin:0 auto}
+.grid{width:80%;height:100%;margin:0 auto}
 *,:after,:before{margin:0;padding:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 .row:after{content:"";display:table;clear:both}
 .column{padding:5px;float:left}
@@ -95,7 +95,9 @@ a{color:#F2385A;-webkit-transition:.2s;transition:.2s;text-decoration:none;text-
 a:hover{color:#36B1BF}
 ::-moz-selection{background:#36B1BF;text-shadow:none}
 ::selection{background:#36B1BF;text-shadow:none}
-.main{margin-bottom:100px;padding:0 5%}
+body,html{height:100%}
+body{background:url(/img/background.png)}
+.main{height:100%;margin-bottom:100px;padding:0 5%}
 .card-container{width:700px;height:400px;margin:0 auto;position:relative;top:100px}
 .card{width:600px;height:300px;padding-top:20px;text-align:center;background-color:#fff;position:absolute;top:100px;left:50%;margin-left:-300px;visibility:hidden;z-index:20}
 .back,.envelope,.flap,.front,.pocket{width:100%;height:100%;text-align:center;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;position:relative}

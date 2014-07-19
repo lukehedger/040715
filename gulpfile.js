@@ -25,7 +25,7 @@ gulp.task('myth', function () {
 			processImport: true
 		}))
 		.pipe(gulp.dest('public/css'))
-		.pipe(browserSync.reload({stream:true}));
+		.pipe(browserSync.reload({stream:true, once: true}));
 });
 
 gulp.task('browser-sync', function() {
@@ -37,7 +37,7 @@ gulp.task('browser-sync', function() {
         	min: 5000,
         	max: 5000
         },
-        open: false, // disable automatic browser launch on server start
+        open: true, // disable automatic browser launch on server start
         notify: false // disable browser notifications
     });
 });

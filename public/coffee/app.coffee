@@ -11,6 +11,9 @@ define [
 		_guests : null
 		_guest : null
 
+		_cardAnimation : null
+		_flapAnimation : null
+
 		constructor: ->
 
 			console.log '040715 up and running...'
@@ -76,11 +79,11 @@ define [
 
 		_openEnvelope: ->
 
-			flap = new TimelineMax()
+			@_flapAnimation = new TimelineMax()
 
-			flap.add TweenMax.to(".envelope", 0.5, {y:100})
-			flap.add TweenMax.to(".card", 0, {autoAlpha:1})
-			flap.add TweenMax.to(".flap", 1, {rotationX:180, transformOrigin:"0 0"})
+			@_flapAnimation.add TweenMax.to(".envelope", 0.5, {y:100})
+			@_flapAnimation.add TweenMax.to(".card", 0, {autoAlpha:1})
+			@_flapAnimation.add TweenMax.to(".flap", 1, {rotationX:180, transformOrigin:"0 0"})
 			
 			setTimeout =>
 				@_showCard()
@@ -88,10 +91,30 @@ define [
 
 		_showCard: ->
 
-			card = new TimelineMax()
+			@_cardAnimation = new TimelineMax()
 
-			card.add TweenMax.to(".card", 0.5, {y:-100, height:"+=100"})
-			card.add TweenMax.to(".card", 0.75, {rotation:25, y:-600, delay: 0.5})
-			card.add TweenMax.set(".card", {zIndex:30, boxShadow: "0 0 10px #999", delay:0.1})
-			card.add TweenMax.to(".card", 0.5, {y:-150, rotation:0})
+			@_cardAnimation.add TweenMax.to(".card", 0.5, {y:-100, height:"+=100"})
+			@_cardAnimation.add TweenMax.to(".card", 0.75, {rotation:25, y:-600, delay: 0.5})
+			@_cardAnimation.add TweenMax.set(".card", {zIndex:30, boxShadow: "0 0 10px #999", delay:0.1})
+			@_cardAnimation.add TweenMax.to(".card", 0.5, {y:-150, rotation:0})
+
+			# add reset listener
+			$("body").on "click", @_reset
+
+		_reset: =>
+
+			@_cardAnimation.reverse()
+			setTimeout =>
+				@_flapAnimation.reverse()
+				
+				setTimeout =>
+					TweenMax.to ".envelope", 0.85, {rotationY:0}
+					TweenMax.to ".back", 0, {rotationY:0}
+
+					# remove reset listener
+					$("body").off "click"
+					$(".card-container").on "mouseover", @_onCardContainerHover
+				,2000
+			,2000
+
 

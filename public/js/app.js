@@ -10,7 +10,12 @@
 
       App.prototype._guest = null;
 
+      App.prototype._cardAnimation = null;
+
+      App.prototype._flapAnimation = null;
+
       function App() {
+        this._reset = __bind(this._reset, this);
         this._onCardContainerHover = __bind(this._onCardContainerHover, this);
         this._onGuestsDataSuccess = __bind(this._onGuestsDataSuccess, this);
         var search;
@@ -80,15 +85,14 @@
       };
 
       App.prototype._openEnvelope = function() {
-        var flap;
-        flap = new TimelineMax();
-        flap.add(TweenMax.to(".envelope", 0.5, {
+        this._flapAnimation = new TimelineMax();
+        this._flapAnimation.add(TweenMax.to(".envelope", 0.5, {
           y: 100
         }));
-        flap.add(TweenMax.to(".card", 0, {
+        this._flapAnimation.add(TweenMax.to(".card", 0, {
           autoAlpha: 1
         }));
-        flap.add(TweenMax.to(".flap", 1, {
+        this._flapAnimation.add(TweenMax.to(".flap", 1, {
           rotationX: 180,
           transformOrigin: "0 0"
         }));
@@ -100,26 +104,45 @@
       };
 
       App.prototype._showCard = function() {
-        var card;
-        card = new TimelineMax();
-        card.add(TweenMax.to(".card", 0.5, {
+        this._cardAnimation = new TimelineMax();
+        this._cardAnimation.add(TweenMax.to(".card", 0.5, {
           y: -100,
           height: "+=100"
         }));
-        card.add(TweenMax.to(".card", 0.75, {
+        this._cardAnimation.add(TweenMax.to(".card", 0.75, {
           rotation: 25,
           y: -600,
           delay: 0.5
         }));
-        card.add(TweenMax.set(".card", {
+        this._cardAnimation.add(TweenMax.set(".card", {
           zIndex: 30,
           boxShadow: "0 0 10px #999",
           delay: 0.1
         }));
-        return card.add(TweenMax.to(".card", 0.5, {
+        this._cardAnimation.add(TweenMax.to(".card", 0.5, {
           y: -150,
           rotation: 0
         }));
+        return $("body").on("click", this._reset);
+      };
+
+      App.prototype._reset = function() {
+        this._cardAnimation.reverse();
+        return setTimeout((function(_this) {
+          return function() {
+            _this._flapAnimation.reverse();
+            return setTimeout(function() {
+              TweenMax.to(".envelope", 0.85, {
+                rotationY: 0
+              });
+              TweenMax.to(".back", 0, {
+                rotationY: 0
+              });
+              $("body").off("click");
+              return $(".card-container").on("mouseover", _this._onCardContainerHover);
+            }, 2000);
+          };
+        })(this), 2000);
       };
 
       return App;

@@ -2,7 +2,16 @@
    LAYOUT
    ========================================================================== */
 
+html, body {
+	height: 100%;
+}
+
+body {
+	background: url('/img/background.png') 0 0;
+}
+
 .main {
+	height: 100%;
 	margin-bottom: 100px;
 	padding:0 5%;
 }
