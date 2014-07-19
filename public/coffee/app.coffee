@@ -86,6 +86,7 @@ define [
 			@_flapAnimation.add TweenMax.to(".flap", 1, {rotationX:180, transformOrigin:"0 0"})
 			
 			setTimeout =>
+				TweenMax.set(".flap", {zIndex:10})
 				@_showCard()
 			,2000
 
@@ -105,8 +106,9 @@ define [
 
 			@_cardAnimation.reverse()
 			setTimeout =>
+				TweenMax.set(".flap", {zIndex:40})
 				@_flapAnimation.reverse()
-				
+
 				setTimeout =>
 					TweenMax.to ".envelope", 0.85, {rotationY:0}
 					TweenMax.to ".back", 0, {rotationY:0}

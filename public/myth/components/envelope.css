@@ -20,23 +20,24 @@
 
 .front {
 	padding-top: 20px;
-	background-color: coral;
+	background: url('/img/envelope-front.png') no-repeat 0 0;
 	z-index: 100;
 }
 
-.back, .flap, .pocket {
-	background-color: lime;
+.back {
+	background: white;
 }
 
 .pocket {
-	height: 300px;
+	height: 100%;
 	position: absolute;
 	bottom: 0;
+	background: url('/img/envelope-back.png') no-repeat 0 0;
 	z-index: 30;
 }
 
 .flap {
-	height: 100px;
-	z-index: 10;
-	border-top: 1px solid black;
+	height: 317px;
+	background: url('/img/flap.png') no-repeat 0 0;
+	z-index: 40;
 }

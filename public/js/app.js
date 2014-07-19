@@ -98,6 +98,9 @@
         }));
         return setTimeout((function(_this) {
           return function() {
+            TweenMax.set(".flap", {
+              zIndex: 10
+            });
             return _this._showCard();
           };
         })(this), 2000);
@@ -130,6 +133,9 @@
         this._cardAnimation.reverse();
         return setTimeout((function(_this) {
           return function() {
+            TweenMax.set(".flap", {
+              zIndex: 40
+            });
             _this._flapAnimation.reverse();
             return setTimeout(function() {
               TweenMax.to(".envelope", 0.85, {
