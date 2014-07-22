@@ -12,15 +12,17 @@ body {
 }
 
 h1 {
-
+	font-family: 'Cabin Sketch';
+	text-transform: uppercase;
 }
 
 h2 {
-	
+	font-family: 'Pompiere';
+	text-transform: uppercase;
 }
 
 h3 {
-
+	font-family: 'Lily Script One';
 }
 
 h4 {

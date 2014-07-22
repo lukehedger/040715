@@ -49,7 +49,6 @@
             return element.code === _this._code;
           };
         })(this))[0];
-        $(".card").html("Hello " + this._guest.name);
         return this._start();
       };
 
