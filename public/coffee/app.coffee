@@ -47,7 +47,7 @@ define [
 			@_guest = @_guests.filter((element) =>
 				element.code is @_code)[0]
 
-			$(".addressee").html ("#{@_guest.name}")
+			$(".addressee h2").html ("#{@_guest.name}")
 
 			@_start()
 

@@ -49,7 +49,7 @@
             return element.code === _this._code;
           };
         })(this))[0];
-        $(".addressee").html("" + this._guest.name);
+        $(".addressee h2").html("" + this._guest.name);
         return this._start();
       };
 

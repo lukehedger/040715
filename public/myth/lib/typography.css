@@ -8,12 +8,13 @@ html,body,button,input,select,textarea {
 
 body {
 	font: normal 1em/1.4 Helvetica, Arial, sans-serif;
-	text-shadow: #fff 0 1px 0;
 }
 
 h1 {
-	font-family: 'Cabin Sketch';
-	text-transform: uppercase;
+	margin: 0;
+	font: normal 100px/1 'langdonregular';
+	text-transform: lowercase;
+	color: #1F1659;
 }
 
 h2 {
@@ -22,7 +23,7 @@ h2 {
 }
 
 h3 {
-	font-family: 'Lily Script One';
+
 }
 
 h4 {
@@ -39,6 +40,11 @@ h6 {
 
 p {
 
+}
+
+.script {
+	font: normal 20px/1 'Lily Script One';
+	display: block;
 }
 
 a {
