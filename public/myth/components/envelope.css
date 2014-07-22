@@ -20,8 +20,22 @@
 
 .front {
 	padding-top: 20px;
-	background: url('/img/envelope-front.png') no-repeat 0 0;
+	background: url('/img/envelope-background.jpg') repeat 0 0;
 	z-index: 100;
+}
+.stamp {
+	background-color: blue;
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+.addressee {
+	height: 50px;
+	margin: auto;
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
 }
 
 .back {

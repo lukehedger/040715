@@ -24,8 +24,8 @@ define [
 				@_code = search.match(/\?(.*)/)[1]
 				@_getGuestsData()
 			else
-				console.log "You don't got no code"
 				# boot off
+				console.log "You don't got no code"
 				$(".front").html ("Your name's not on the list")
 
 		_getGuestsData: ->
@@ -47,7 +47,7 @@ define [
 			@_guest = @_guests.filter((element) =>
 				element.code is @_code)[0]
 
-			# $(".card").html ("Hello #{@_guest.name}")
+			$(".addressee").html ("#{@_guest.name}")
 
 			@_start()
 
