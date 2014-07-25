@@ -123,7 +123,7 @@
           delay: 0.1
         }));
         this._cardAnimation.add(TweenMax.to(".card", 0.5, {
-          y: -150,
+          y: -200,
           rotation: 0
         }));
         return $("body").on("click", this._reset);

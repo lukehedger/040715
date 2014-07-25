@@ -14,7 +14,7 @@ node_modules/
 
 # Map files #
 ######################
-js/maps/
+public/js/maps/
 
 # Divshot #
 ######################

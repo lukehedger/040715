@@ -97,7 +97,7 @@ define [
 			@_cardAnimation.add TweenMax.to(".card", 0.5, {y:-100, height:"+=100"})
 			@_cardAnimation.add TweenMax.to(".card", 0.75, {rotation:25, y:-600, delay: 0.5})
 			@_cardAnimation.add TweenMax.set(".card", {zIndex:30, boxShadow: "0 0 10px #999", delay:0.1})
-			@_cardAnimation.add TweenMax.to(".card", 0.5, {y:-150, rotation:0})
+			@_cardAnimation.add TweenMax.to(".card", 0.5, {y:-200, rotation:0})
 
 			# add reset listener
 			$("body").on "click", @_reset
