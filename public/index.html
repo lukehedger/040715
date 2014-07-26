@@ -8,21 +8,18 @@
 		<title>040715</title>
 		<meta name="title" content="040715">
 		<meta name="description" content="Alice and Luke's Epic Day" />
-		<meta name="keywords" content="040715,web app" />
+		<meta name="keywords" content="040715, save the date, alice and luke" />
 		<meta name="author" content="Luke Hedger" />
 		<meta name="copyright" content="Copyright Luke Hedger 2014. All Rights Reserved.">
 		<meta name="mobile-web-app-capable" content="yes">
 		<link href='http://fonts.googleapis.com/css?family=Pompiere|Cabin+Sketch:700|Lily+Script+One' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="vendor/outdated-browser/outdatedBrowser.min.css">  
 		<link rel="stylesheet" href="css/main.css">
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 	</head>
 	<body>
-		
-		<header role="banner">
-			
-		</header>
 
 		<main role="main" class="main">
 			<div class="grid">
@@ -90,14 +87,16 @@
 							</div>
 						</div>
 
+						<div id="outdated">
+							<h6>Your browser is out-of-date!</h6>
+							<p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+							<p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+						</div>
+
 					</div>
 				</div>
 			</div>
 		</main>
-
-		<footer role="contentinfo">
-			
-		</footer>
 		
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script>
@@ -110,6 +109,31 @@
 		</script>
 
 		<script data-main="js/main" src="vendor/require.js"></script>
+
+		<script src="vendor/outdated-browser/outdatedBrowser.min.js"></script>
+
+		<script type="text/javascript">
+			//event listener: DOM ready
+			function addLoadEvent(func) {
+				var oldonload = window.onload;
+				if (typeof window.onload != 'function') {
+					window.onload = func;
+				} else {
+					window.onload = function() {
+						oldonload();
+						func();
+					}
+				}
+			}
+			//call plugin function after DOM ready
+			addLoadEvent(
+				outdatedBrowser({
+					bgColor: '#f25648',
+					color: '#ffffff',
+					lowerThan: 'transform'
+				})
+			);
+		</script>
 
 	</body>
 </html>

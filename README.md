@@ -33,5 +33,4 @@
 ## TODO
 
 - [ ] Database
-- [ ] Browser updgrade - see tweet
-- [ ] GA + MC
+- [ ] GA
