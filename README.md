@@ -32,4 +32,6 @@
 
 ## TODO
 
-- [ ] Templating - maybe ECO?
+- [ ] Database
+- [ ] Browser updgrade - see tweet
+- [ ] GA + MC

@@ -7,7 +7,7 @@ button,html,input,select,textarea{font-family:sans-serif}
 body{margin:0}
 a:focus{outline:dotted thin}
 a:active,a:hover{outline:0}
-h2{font-size:1.5em;margin:.83em 0}
+h2{font-size:1.5em}
 h3{font-size:1.17em;margin:1em 0}
 h4{font-size:1em;margin:1.33em 0}
 h5{font-size:.83em;margin:1.67em 0}
@@ -91,26 +91,40 @@ h2,h3{page-break-after:avoid}}
 @font-face{font-family:langdonregular;src:url(/fonts/langdon/langdon-webfont.eot);src:url(/fonts/langdon/langdon-webfont.eot?#iefix) format('embedded-opentype'),url(/fonts/langdon/langdon-webfont.woff) format('woff'),url(/fonts/langdon/langdon-webfont.ttf) format('truetype'),url(/fonts/langdon/langdon-webfont.svg#langdonregular) format('svg');font-weight:400;font-style:normal}
 body,button,html,input,select,textarea{color:#444}
 body{font:400 1em/1.4 Helvetica,Arial,sans-serif}
-h1{margin:0;font:400 100px/1 langdonregular;text-transform:lowercase;color:#1F1659}
-h2{font-family:Pompiere;text-transform:uppercase}
-.script{font:400 20px/1 'Lily Script One';display:block}
+h1{margin:0;font:400 100px/1 langdonregular;text-transform:lowercase;letter-spacing:10px}
+h2{margin:0;font-family:Pompiere;text-transform:uppercase}
+.script{font:400 20px/1 'Lily Script One';letter-spacing:0;display:block}
 a{color:#F2385A;-webkit-transition:.2s;transition:.2s;text-decoration:none;text-shadow:none;cursor:pointer;-webkit-tap-highlight-color:transparent}
 a:hover{color:#36B1BF}
-::-moz-selection{background:#36B1BF;text-shadow:none}
-::selection{background:#36B1BF;text-shadow:none}
+::-moz-selection{background:#78CDF3;text-shadow:none}
+::selection{background:#78CDF3;text-shadow:none}
 body,html{height:100%;min-height:100%}
 body{background:url(/img/background.png);overflow:hidden}
 .main{height:100%;min-height:100%;padding:0 5%}
 .card-container{width:623px;height:527px;margin:auto;position:absolute;top:0;right:0;bottom:0;left:0}
-.card{width:480px;height:380px;padding-top:20px;text-align:center;background-color:wheat;position:absolute;top:100px;left:50%;margin-left:-240px;visibility:hidden;z-index:20}
+.bunting{border-top:1px solid #FDB813}
+.triangle{width:0;height:0;border-style:solid;border-width:21.7px 12.5px 0;border-color:#FDB813 transparent transparent;display:inline-block}
+.card{width:480px;height:380px;padding-top:20px;text-align:center;color:#335767;background-color:ivory;position:absolute;top:100px;left:50%;margin-left:-240px;visibility:hidden;z-index:20}
+.card .content{width:240px;margin:0 auto}
+.sunset:before{content:"";display:block;height:35px;width:70px;margin:0 auto;border-radius:70px 70px 0 0;background:#FDB813;-webkit-box-shadow:0 -3px 10px 0 #FDB813;box-shadow:0 -3px 10px 0 #FDB813}
+.script.dbl-border:before{content:"";margin:0 auto -8px;border-bottom:1px solid #78CDF3;display:block}
+.script.dbl-border:after{content:"";margin:-10px auto 0;border-top:1px solid #78CDF3;display:block}
+.script.dbl-border em{background-color:ivory;padding:0 20px 0 15px}
+.date{margin-bottom:10px;font-size:50px;line-height:70px}
+.details{font-size:14px}
+.follow{margin-top:10px;font-size:16px}
 .back,.envelope,.flap,.front,.pocket{width:100%;height:100%;text-align:center;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;position:relative}
 .back,.front{-webkit-backface-visibility:hidden;backface-visibility:hidden;position:absolute;top:0;left:0}
 .front{padding-top:20px;background:url(/img/envelope-background.jpg);z-index:100}
-.stamp{background-color:#00f;width:100px;height:50px;position:absolute;top:20px;right:20px}
+.stamp{background:url(/img/stamp.jpg) no-repeat;-webkit-background-size:cover;background-size:cover;width:200px;height:100px;position:absolute;top:20px;right:20px}
 .addressee{height:50px;margin:auto;position:absolute;top:0;bottom:0;left:0;right:0}
-.back{background:#fff}
+.addressee h2{font-size:40px;line-height:50px;text-decoration:underline}
+.back{background:url(/img/envelope-background.jpg)}
 .pocket{height:100%;position:absolute;bottom:0;background:url(/img/envelope-back.png) no-repeat;z-index:30}
 .flap{height:317px;background:url(/img/flap.png) no-repeat;z-index:40}
+.tent{width:0;height:0;margin:0 auto 0 -44px;border-style:solid;border-width:0 22px 38.1px;border-color:transparent transparent #335767;position:relative;left:50%}
+.tent:before{content:"";width:0;height:0;border-style:solid;border-width:0 11px 19.1px;border-color:transparent transparent ivory;position:absolute;top:22px;left:-12px}
+.tent-canvas{width:44px;height:44px;background:#335767;position:absolute;top:-3px;left:13px}
 img,video{max-width:100%}
 .video-wrap{width:100%;height:0;padding-bottom:56.25%;position:relative}
 .video-wrap iframe{width:100%;height:100%;position:absolute}

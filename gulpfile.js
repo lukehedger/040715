@@ -17,7 +17,9 @@ gulp.task('coffee', function () {
 
 gulp.task('myth', function () {
 	gulp.src('public/myth/**/*.css')
-		.pipe(myth())
+		.pipe(myth({
+			source: "./myth"
+		}))
 		.pipe(gulp.dest('public/css'))
 		.pipe(minifycss({
 			keepBreaks: true,
@@ -38,7 +40,8 @@ gulp.task('browser-sync', function() {
         	max: 5000
         },
         open: true, // disable automatic browser launch on server start
-        notify: false // disable browser notifications
+        notify: false, // disable browser notifications
+        startPath: (gutil.env.test ? "/?jandp" : "")
     });
 });
 

@@ -1,8 +1,9 @@
 .back,.envelope,.flap,.front,.pocket{width:100%;height:100%;text-align:center;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;position:relative}
 .back,.front{-webkit-backface-visibility:hidden;backface-visibility:hidden;position:absolute;top:0;left:0}
 .front{padding-top:20px;background:url(/img/envelope-background.jpg);z-index:100}
-.stamp{background-color:#00f;width:100px;height:50px;position:absolute;top:20px;right:20px}
+.stamp{background:url(/img/stamp.jpg) no-repeat;-webkit-background-size:cover;background-size:cover;width:200px;height:100px;position:absolute;top:20px;right:20px}
 .addressee{height:50px;margin:auto;position:absolute;top:0;bottom:0;left:0;right:0}
-.back{background:#fff}
+.addressee h2{font-size:40px;line-height:50px;text-decoration:underline}
+.back{background:url(/img/envelope-background.jpg)}
 .pocket{height:100%;position:absolute;bottom:0;background:url(/img/envelope-back.png) no-repeat;z-index:30}
 .flap{height:317px;background:url(/img/flap.png) no-repeat;z-index:40}

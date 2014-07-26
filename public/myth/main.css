@@ -4,6 +4,8 @@
 @import "lib/fonts.css";
 @import "lib/typography.css";
 @import "components/app.css";
+@import "components/bunting.css";
 @import "components/card.css";
 @import "components/envelope.css";
+@import "components/tent.css";
 @import "components/responsive.css";

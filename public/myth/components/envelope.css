@@ -24,9 +24,10 @@
 	z-index: 100;
 }
 .stamp {
-	background-color: blue;
-	width: 100px;
-	height: 50px;
+	background: url('/img/stamp.jpg') no-repeat 0 0;
+	background-size: cover;
+	width: 200px;
+	height: 100px;
 	position: absolute;
 	top: 20px;
 	right: 20px;
@@ -37,9 +38,14 @@
 	position: absolute;
 	top: 0; bottom: 0; left: 0; right: 0;
 }
+.addressee h2 {
+	font-size: 40px;
+	line-height: 50px;
+	text-decoration: underline;
+}
 
 .back {
-	background: white;
+	background: url('/img/envelope-background.jpg') repeat 0 0;
 }
 
 .pocket {

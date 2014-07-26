@@ -1,9 +1,9 @@
 define [
 	"jquery"
 	"TweenMax"
-	"TimelineMax"
+	"TimelineLite"
 	"utils/Ajax"
-], ($,TweenMax,TimelineMax,Ajax) ->
+], ($,TweenMax,TimelineLite,Ajax) ->
 
 	class App
 
@@ -15,8 +15,6 @@ define [
 		_flapAnimation : null
 
 		constructor: ->
-
-			console.log '040715 up and running...'
 
 			search = window.location.search
 
@@ -62,9 +60,8 @@ define [
 
 		_setupElements: ->
 
-			console.log "set"
-
 			TweenMax.set ".card-container", {perspective:1000}
+			TweenMax.set ".tent-canvas", {skewX:"30deg"}
 
 		_onCardContainerHover: (e) =>
 
@@ -79,11 +76,13 @@ define [
 
 		_openEnvelope: ->
 
-			@_flapAnimation = new TimelineMax()
+			console.log TimelineLite
+
+			@_flapAnimation = new TimelineLite()
 
 			@_flapAnimation.add TweenMax.to(".envelope", 0.5, {y:100})
-			@_flapAnimation.add TweenMax.to(".card", 0, {autoAlpha:1})
-			@_flapAnimation.add TweenMax.to(".flap", 1, {rotationX:180, transformOrigin:"0 0"})
+			.add TweenMax.to(".card", 0, {autoAlpha:1})
+			.add TweenMax.to(".flap", 1, {rotationX:180, transformOrigin:"0 0"})
 			
 			setTimeout =>
 				TweenMax.set(".flap", {zIndex:10})
@@ -92,15 +91,16 @@ define [
 
 		_showCard: ->
 
-			@_cardAnimation = new TimelineMax()
+			@_cardAnimation = new TimelineLite()
 
 			@_cardAnimation.add TweenMax.to(".card", 0.5, {y:-100, height:"+=100"})
-			@_cardAnimation.add TweenMax.to(".card", 0.75, {rotation:25, y:-600, delay: 0.5})
-			@_cardAnimation.add TweenMax.set(".card", {zIndex:30, boxShadow: "0 0 10px #999", delay:0.1})
-			@_cardAnimation.add TweenMax.to(".card", 0.5, {y:-200, rotation:0})
+			.add TweenMax.to(".card", 0.75, {rotation:25, y:-600, delay: 0.5})
+			.add TweenMax.set(".card", {zIndex:30, boxShadow: "0 0 10px #999", delay:0.1})
+			.add TweenMax.to(".card", 0.5, {y:-180, rotation:0})
+			.add TweenMax.to(".card", 0.5, {scale:1.2})
 
 			# add reset listener
-			$("body").on "click", @_reset
+			# $("body").on "click", @_reset
 
 		_reset: =>
 

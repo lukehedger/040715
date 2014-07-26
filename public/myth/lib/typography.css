@@ -2,6 +2,8 @@
    TYPOGRAPHY
    ========================================================================== */
 
+@import "settings.css";
+
 html,body,button,input,select,textarea {
 	color:#444;
 }
@@ -14,10 +16,11 @@ h1 {
 	margin: 0;
 	font: normal 100px/1 'langdonregular';
 	text-transform: lowercase;
-	color: #1F1659;
+	letter-spacing: 10px;
 }
 
 h2 {
+	margin: 0;
 	font-family: 'Pompiere';
 	text-transform: uppercase;
 }
@@ -44,6 +47,7 @@ p {
 
 .script {
 	font: normal 20px/1 'Lily Script One';
+	letter-spacing: 0;
 	display: block;
 }
 
@@ -64,11 +68,11 @@ a:hover {
  */
 
 ::-moz-selection {
-    background: #36B1BF;
+    background: var(--colour-skyblue);
     text-shadow: none;
 }
 
 ::selection {
-    background: #36B1BF;
+    background: var(--colour-skyblue);
     text-shadow: none;
 }

@@ -1,7 +1,7 @@
 (function() {
   var __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
-  define(["jquery", "TweenMax", "TimelineMax", "utils/Ajax"], function($, TweenMax, TimelineMax, Ajax) {
+  define(["jquery", "TweenMax", "TimelineLite", "utils/Ajax"], function($, TweenMax, TimelineLite, Ajax) {
     var App;
     return App = (function() {
       App.prototype._code = null;
@@ -19,7 +19,6 @@
         this._onCardContainerHover = __bind(this._onCardContainerHover, this);
         this._onGuestsDataSuccess = __bind(this._onGuestsDataSuccess, this);
         var search;
-        console.log('040715 up and running...');
         search = window.location.search;
         if ((search != null) && search !== "") {
           this._code = search.match(/\?(.*)/)[1];
@@ -63,9 +62,11 @@
       };
 
       App.prototype._setupElements = function() {
-        console.log("set");
-        return TweenMax.set(".card-container", {
+        TweenMax.set(".card-container", {
           perspective: 1000
+        });
+        return TweenMax.set(".tent-canvas", {
+          skewX: "30deg"
         });
       };
 
@@ -85,14 +86,13 @@
       };
 
       App.prototype._openEnvelope = function() {
-        this._flapAnimation = new TimelineMax();
+        console.log(TimelineLite);
+        this._flapAnimation = new TimelineLite();
         this._flapAnimation.add(TweenMax.to(".envelope", 0.5, {
           y: 100
-        }));
-        this._flapAnimation.add(TweenMax.to(".card", 0, {
+        })).add(TweenMax.to(".card", 0, {
           autoAlpha: 1
-        }));
-        this._flapAnimation.add(TweenMax.to(".flap", 1, {
+        })).add(TweenMax.to(".flap", 1, {
           rotationX: 180,
           transformOrigin: "0 0"
         }));
@@ -107,26 +107,24 @@
       };
 
       App.prototype._showCard = function() {
-        this._cardAnimation = new TimelineMax();
-        this._cardAnimation.add(TweenMax.to(".card", 0.5, {
+        this._cardAnimation = new TimelineLite();
+        return this._cardAnimation.add(TweenMax.to(".card", 0.5, {
           y: -100,
           height: "+=100"
-        }));
-        this._cardAnimation.add(TweenMax.to(".card", 0.75, {
+        })).add(TweenMax.to(".card", 0.75, {
           rotation: 25,
           y: -600,
           delay: 0.5
-        }));
-        this._cardAnimation.add(TweenMax.set(".card", {
+        })).add(TweenMax.set(".card", {
           zIndex: 30,
           boxShadow: "0 0 10px #999",
           delay: 0.1
-        }));
-        this._cardAnimation.add(TweenMax.to(".card", 0.5, {
-          y: -200,
+        })).add(TweenMax.to(".card", 0.5, {
+          y: -180,
           rotation: 0
+        })).add(TweenMax.to(".card", 0.5, {
+          scale: 1.2
         }));
-        return $("body").on("click", this._reset);
       };
 
       App.prototype._reset = function() {

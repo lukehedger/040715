@@ -1,9 +1,9 @@
 body,button,html,input,select,textarea{color:#444}
 body{font:400 1em/1.4 Helvetica,Arial,sans-serif}
-h1{margin:0;font:400 100px/1 langdonregular;text-transform:lowercase;color:#1F1659}
-h2{font-family:Pompiere;text-transform:uppercase}
-.script{font:400 20px/1 'Lily Script One';display:block}
+h1{margin:0;font:400 100px/1 langdonregular;text-transform:lowercase;letter-spacing:10px}
+h2{margin:0;font-family:Pompiere;text-transform:uppercase}
+.script{font:400 20px/1 'Lily Script One';letter-spacing:0;display:block}
 a{color:#F2385A;-webkit-transition:.2s;transition:.2s;text-decoration:none;text-shadow:none;cursor:pointer;-webkit-tap-highlight-color:transparent}
 a:hover{color:#36B1BF}
-::-moz-selection{background:#36B1BF;text-shadow:none}
-::selection{background:#36B1BF;text-shadow:none}
+::-moz-selection{background:#78CDF3;text-shadow:none}
+::selection{background:#78CDF3;text-shadow:none}

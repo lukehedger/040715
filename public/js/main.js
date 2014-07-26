@@ -3,12 +3,12 @@
     paths: {
       "jquery": "../vendor/jquery",
       "TweenMax": "../vendor/TweenMax.min",
-      "TimelineMax": "../vendor/TimelineMax.min"
+      "TimelineLite": "../vendor/TimelineLite"
     },
     shim: {
       app: ["jquery"],
-      "TimelineMax": {
-        exports: "TimelineMax"
+      "TimelineLite": {
+        exports: "TimelineLite"
       }
     }
   });

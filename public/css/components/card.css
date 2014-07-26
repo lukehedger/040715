@@ -1,1 +1,9 @@
-.card{width:480px;height:380px;padding-top:20px;text-align:center;background-color:wheat;position:absolute;top:100px;left:50%;margin-left:-240px;visibility:hidden;z-index:20}
+.card{width:480px;height:380px;padding-top:20px;text-align:center;color:#335767;background-color:ivory;position:absolute;top:100px;left:50%;margin-left:-240px;visibility:hidden;z-index:20}
+.card .content{width:240px;margin:0 auto}
+.sunset:before{content:"";display:block;height:35px;width:70px;margin:0 auto;border-radius:70px 70px 0 0;background:#FDB813;-webkit-box-shadow:0 -3px 10px 0 #FDB813;box-shadow:0 -3px 10px 0 #FDB813}
+.script.dbl-border:before{content:"";margin:0 auto -8px;border-bottom:1px solid #78CDF3;display:block}
+.script.dbl-border:after{content:"";margin:-10px auto 0;border-top:1px solid #78CDF3;display:block}
+.script.dbl-border em{background-color:ivory;padding:0 20px 0 15px}
+.date{margin-bottom:10px;font-size:50px;line-height:70px}
+.details{font-size:14px}
+.follow{margin-top:10px;font-size:16px}
