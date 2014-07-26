@@ -1,6 +1,14 @@
 {
 	"guests": [
 		{
+			"name": "Luke",
+			"code": "groom"
+		},
+		{
+			"name": "Alice",
+			"code": "bride"
+		},
+		{
 			"name": "Jane & Peter",
 			"code": "jandp"
 		},
