@@ -2,6 +2,8 @@
    LAYOUT
    ========================================================================== */
 
+@import "../lib/settings.css";
+
 html, body {
 	height: 100%;
 	min-height: 100%;
@@ -9,7 +11,6 @@ html, body {
 
 body {
 	background: url('/img/background.png') 0 0;
-	/*overflow: hidden;*/
 }
 
 .main {
@@ -19,9 +20,10 @@ body {
 }
 
 .card-container {
-	width: 623px;
-	height: 527px;
-	margin: auto;
+	width: var(--card-width);
+	height: var(--card-height);
 	position: absolute;
-	top: 0px; right: 0px; bottom: 0px; left: 0px;
+	top: 10%;
+	left: 50%;
+	margin-left: calc((var(--card-width) / 2) * -1);
 }

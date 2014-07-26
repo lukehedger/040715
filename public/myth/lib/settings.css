@@ -3,6 +3,9 @@
    ========================================================================== */
 
 :root {
+	--card-width: 623px;
+	--card-height: 527px;
+
 	--colour-card: #FFFFF0;
 	--colour-turq: #335767;
 	--colour-skyblue: #78CDF3;
@@ -10,5 +13,4 @@
 
 	--colour-envelope: #3D4C9A;
 	--colour-envelope2: #9A543D;
-
 }
