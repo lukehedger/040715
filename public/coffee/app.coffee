@@ -22,9 +22,7 @@ define [
 				@_code = search.match(/\?(.*)/)[1]
 				@_getGuestsData()
 			else
-				# boot off
-				console.log "You don't got no code"
-				$(".front").html ("Your name's not on the list")
+				@_onGuestNotFound()
 
 		_getGuestsData: ->
 
@@ -38,16 +36,18 @@ define [
 
 		_onGuestsDataError: (e) ->
 
-			console.log "data error", e
+			@_onGuestNotFound()
 
 		_findGuest: ->
 
 			@_guest = @_guests.filter((element) =>
 				element.code is @_code)[0]
 
-			$(".addressee h2").html ("#{@_guest.name}")
-
-			@_start()
+			if @_guest?
+				$(".addressee h2").html ("#{@_guest.name}")
+				@_start()
+			else
+				@_onGuestNotFound()
 
 		_start: ->
 
@@ -63,6 +63,10 @@ define [
 			TweenMax.set ".card-container", {perspective:1000}
 			TweenMax.set ".tent-canvas", {skewX:"30deg"}
 
+		_onGuestNotFound: ->
+
+			$(".addressee h2").html "Return to sender"
+
 		_onCardContainerHover: (e) =>
 
 			setTimeout =>
@@ -75,8 +79,6 @@ define [
 			$(".card-container").off "mouseover"
 
 		_openEnvelope: ->
-
-			console.log TimelineLite
 
 			@_flapAnimation = new TimelineLite()
 

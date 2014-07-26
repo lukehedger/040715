@@ -24,8 +24,7 @@
           this._code = search.match(/\?(.*)/)[1];
           this._getGuestsData();
         } else {
-          console.log("You don't got no code");
-          $(".front").html("Your name's not on the list");
+          this._onGuestNotFound();
         }
       }
 
@@ -39,7 +38,7 @@
       };
 
       App.prototype._onGuestsDataError = function(e) {
-        return console.log("data error", e);
+        return this._onGuestNotFound();
       };
 
       App.prototype._findGuest = function() {
@@ -48,8 +47,12 @@
             return element.code === _this._code;
           };
         })(this))[0];
-        $(".addressee h2").html("" + this._guest.name);
-        return this._start();
+        if (this._guest != null) {
+          $(".addressee h2").html("" + this._guest.name);
+          return this._start();
+        } else {
+          return this._onGuestNotFound();
+        }
       };
 
       App.prototype._start = function() {
@@ -70,6 +73,10 @@
         });
       };
 
+      App.prototype._onGuestNotFound = function() {
+        return $(".addressee h2").html("Return to sender");
+      };
+
       App.prototype._onCardContainerHover = function(e) {
         setTimeout((function(_this) {
           return function() {
@@ -86,7 +93,6 @@
       };
 
       App.prototype._openEnvelope = function() {
-        console.log(TimelineLite);
         this._flapAnimation = new TimelineLite();
         this._flapAnimation.add(TweenMax.to(".envelope", 0.5, {
           y: 100
