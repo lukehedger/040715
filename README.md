@@ -28,4 +28,4 @@
 
 ## Status
 
-[![Build Status](https://travis-ci.org/lukehedger/040715.svg?branch=master)](https://travis-ci.org/lukehedger/040715)
+[![Build Status](http://img.shields.io/travis/lukehedger/040715/master.svg?style=flat)](https://travis-ci.org/lukehedger/040715)
