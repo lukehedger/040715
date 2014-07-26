@@ -118,5 +118,3 @@ define [
 					$(".card-container").on "mouseover", @_onCardContainerHover
 				,2000
 			,2000
-
-

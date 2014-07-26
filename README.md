@@ -29,7 +29,3 @@
 ## Status
 
 [![Build Status](https://travis-ci.org/lukehedger/040715.svg?branch=master)](https://travis-ci.org/lukehedger/040715)
-
-## TODO
-
-- [ ] Database
