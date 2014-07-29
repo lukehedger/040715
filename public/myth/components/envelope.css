@@ -26,8 +26,8 @@
 .stamp {
 	background: url('/img/stamp.jpg') no-repeat 0 0;
 	background-size: cover;
-	width: 150px;
-	height: 90px;
+	width: 125px;
+	height: 125px;
 	position: absolute;
 	top: 20px;
 	right: 20px;
