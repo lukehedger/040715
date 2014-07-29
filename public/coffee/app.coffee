@@ -98,7 +98,7 @@ define [
 			@_cardAnimation.add TweenMax.to(".card", 0.5, {y:-100, height:"+=100"})
 			.add TweenMax.to(".card", 0.75, {rotation:25, y:-600, delay: 0.5})
 			.add TweenMax.set(".card", {zIndex:30, boxShadow: "0 0 10px #999", delay:0.1})
-			.add TweenMax.to(".card", 0.5, {y:-180, rotation:0})
+			.add TweenMax.to(".card", 0.5, {y:-130, rotation:0})
 			.add TweenMax.to(".card", 0.5, {scale:1.2})
 
 			# add reset listener

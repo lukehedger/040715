@@ -126,7 +126,7 @@
           boxShadow: "0 0 10px #999",
           delay: 0.1
         })).add(TweenMax.to(".card", 0.5, {
-          y: -180,
+          y: -130,
           rotation: 0
         })).add(TweenMax.to(".card", 0.5, {
           scale: 1.2
