@@ -10,6 +10,8 @@
 
       App.prototype._guest = null;
 
+      App.prototype._forceStart = null;
+
       App.prototype._cardAnimation = null;
 
       App.prototype._flapAnimation = null;
@@ -57,7 +59,12 @@
 
       App.prototype._start = function() {
         this._addListeners();
-        return this._setupElements();
+        this._setupElements();
+        return this._forceStart = setTimeout((function(_this) {
+          return function() {
+            return _this._flipEnvelope();
+          };
+        })(this), 2000);
       };
 
       App.prototype._addListeners = function() {
@@ -78,11 +85,16 @@
       };
 
       App.prototype._onCardContainerHover = function(e) {
+        clearTimeout(this._forceStart);
+        return this._flipEnvelope();
+      };
+
+      App.prototype._flipEnvelope = function() {
         setTimeout((function(_this) {
           return function() {
             return _this._openEnvelope();
           };
-        })(this), 2000);
+        })(this), 1000);
         TweenMax.to(".envelope", 0.85, {
           rotationY: 180
         });

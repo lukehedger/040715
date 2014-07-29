@@ -11,6 +11,8 @@ define [
 		_guests : null
 		_guest : null
 
+		_forceStart : null
+
 		_cardAnimation : null
 		_flapAnimation : null
 
@@ -54,6 +56,10 @@ define [
 			@_addListeners()
 			@_setupElements()
 
+			@_forceStart = setTimeout =>
+				@_flipEnvelope()
+			,2000
+
 		_addListeners: ->
 
 			$(".card-container").on "mouseover", @_onCardContainerHover
@@ -69,9 +75,15 @@ define [
 
 		_onCardContainerHover: (e) =>
 
+			clearTimeout @_forceStart
+
+			@_flipEnvelope()
+
+		_flipEnvelope: ->
+
 			setTimeout =>
 				@_openEnvelope()
-			,2000
+			,1000
 
 			TweenMax.to ".envelope", 0.85, {rotationY:180}
 			TweenMax.to ".back", 0, {rotationY:180}
