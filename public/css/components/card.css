@@ -5,5 +5,5 @@
 .script.dbl-border:after{content:"";margin:-10px auto 0;border-top:1px solid #78CDF3;display:block}
 .script.dbl-border em{background-color:ivory;padding:0 20px 0 15px}
 .date{margin-bottom:10px;font-size:50px;line-height:70px}
-.details{font-size:14px}
+.details{font-size:14px;text-transform:uppercase}
 .follow{margin-top:10px;font-size:16px}
