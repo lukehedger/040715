@@ -20,10 +20,11 @@
         this._reset = __bind(this._reset, this);
         this._onCardContainerHover = __bind(this._onCardContainerHover, this);
         this._onGuestsDataSuccess = __bind(this._onGuestsDataSuccess, this);
-        var search;
+        var matchSearch, search;
         search = window.location.search;
         if ((search != null) && search !== "") {
-          this._code = search.match(/\?(.*?)\&/)[1];
+          matchSearch = search.match(/\?(.*?)\&/) || search.match(/\?(.*)/);
+          this._code = matchSearch[1];
           this._getGuestsData();
         } else {
           this._onGuestNotFound();
