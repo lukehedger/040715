@@ -21,7 +21,7 @@ define [
 			search = window.location.search
 
 			if search? and search isnt ""
-				@_code = search.match(/\?(.*)/)[1]
+				@_code = search.match(/\?(.*?)\&/)[1]
 				@_getGuestsData()
 			else
 				@_onGuestNotFound()

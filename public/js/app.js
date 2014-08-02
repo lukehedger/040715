@@ -23,7 +23,7 @@
         var search;
         search = window.location.search;
         if ((search != null) && search !== "") {
-          this._code = search.match(/\?(.*)/)[1];
+          this._code = search.match(/\?(.*?)\&/)[1];
           this._getGuestsData();
         } else {
           this._onGuestNotFound();
