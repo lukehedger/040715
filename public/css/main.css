@@ -76,7 +76,7 @@ textarea{resize:vertical}
 @media only screen and (max-width:480px){.column{width:100%}
 .column.bottom,.column.middle{position:relative}
 .inner{padding:5px 20px}}
-@media print{*{background:0 0!important;color:#000!important;-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
+@media print{*{-webkit-print-color-adjust:exact;background:0 0!important;-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
 a,a:visited{text-decoration:underline}
 a[href]:after{content:" (" attr(href) ")"}
 abbr[title]:after{content:" (" attr(title) ")"}
@@ -87,7 +87,10 @@ img,tr{page-break-inside:avoid}
 img{max-width:100%!important}
 @page{margin:.5cm}
 h2,h3,p{orphans:3;widows:3}
-h2,h3{page-break-after:avoid}}
+h2,h3{page-break-after:avoid}
+.main{background:url(/img/background.png)!important}
+.addressee,.tent{display:none}
+.card,.script.dbl-border em{background-color:ivory!important}}
 @font-face{font-family:langdonregular;src:url(/fonts/langdon/langdon-webfont.eot);src:url(/fonts/langdon/langdon-webfont.eot?#iefix) format('embedded-opentype'),url(/fonts/langdon/langdon-webfont.woff) format('woff'),url(/fonts/langdon/langdon-webfont.ttf) format('truetype'),url(/fonts/langdon/langdon-webfont.svg#langdonregular) format('svg');font-weight:400;font-style:normal}
 body,button,html,input,select,textarea{color:#444}
 body{font:400 1em/1.4 Helvetica,Arial,sans-serif}

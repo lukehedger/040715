@@ -1,4 +1,4 @@
-@media print{*{background:0 0!important;color:#000!important;-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
+@media print{*{-webkit-print-color-adjust:exact;background:0 0!important;-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
 a,a:visited{text-decoration:underline}
 a[href]:after{content:" (" attr(href) ")"}
 abbr[title]:after{content:" (" attr(title) ")"}
@@ -9,4 +9,7 @@ img,tr{page-break-inside:avoid}
 img{max-width:100%!important}
 @page{margin:.5cm}
 h2,h3,p{orphans:3;widows:3}
-h2,h3{page-break-after:avoid}}
+h2,h3{page-break-after:avoid}
+.main{background:url(/img/background.png)!important}
+.addressee,.tent{display:none}
+.card,.script.dbl-border em{background-color:ivory!important}}
