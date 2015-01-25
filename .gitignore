@@ -10,12 +10,17 @@ Thumbs.db
 
 # Dependencies #
 ######################
+bower_components/
 node_modules/
-
-# Map files #
-######################
-public/js/maps/
 
 # Divshot #
 ######################
 .divshot*
+
+# Compiled CSS #
+######################
+css/main.css
+
+# Bundled JS #
+######################
+js/bundle.js
