@@ -1,17 +1,26 @@
 {
-  "name": "040515",
-  "version": "0.0.1",
+  "name": "ractive-fire-app",
+  "version": "0.0.0",
   "authors": [
     "Luke Hedger <luke.hedger@gmail.com>"
   ],
-  "license": "MIT",
   "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
+    "vendor",
     "test",
     "tests"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "ractive": "0.6.x",
+    "ractive-events-tap": "*",
+    "domready": "~1.0.x",
+    "page": "~1.5.x"
+  },
+  "devDependencies": {},
+  "resolutions": {
+    "ractive": "0.6.x"
+  }
 }

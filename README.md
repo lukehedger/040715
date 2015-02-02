@@ -2,7 +2,8 @@
 
 ## Stack
 
-- **[Angular-Firebase](https://www.firebase.com/docs/web/libraries/angular/quickstart.html)**
+- **[Ractive](http://www.ractivejs.org/)**
+- **[Firebase](https://www.firebase.com/)**
 - **[CoffeeScript](http://coffeescript.org/)**
 - **[Stylus](http://learnboost.github.io/stylus/)** (with [Jeet](http://jeet.gs/) & [Rupture](https://github.com/jenius/rupture))
 - **[Gulp](http://gulpjs.com/)**
@@ -23,7 +24,7 @@
 
 ## Deployment
 
-+ Run `gulp release` to build  your `public/` folder.
++ Run `gulp --build` to build your release version.
 + Just push to GitHub and Travis will deploy to the development environment
 + Push to Divshot manually: `divshot push <env>`
 + Promote to environment: `divshot promote <from_env> <to_env>`

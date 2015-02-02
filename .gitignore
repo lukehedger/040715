@@ -10,17 +10,9 @@ Thumbs.db
 
 # Dependencies #
 ######################
-bower_components/
+vendor/
 node_modules/
 
 # Divshot #
 ######################
 .divshot*
-
-# Compiled CSS #
-######################
-css/main.css
-
-# Bundled JS #
-######################
-js/bundle.js
