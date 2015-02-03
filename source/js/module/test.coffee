@@ -13,6 +13,10 @@ module.exports = Module.extend
 
 	template: require "module/test.html"
 
+	data:
+		clicked: false
+
 	oninit: ->
 		console.log "test :)"
 
+		@on "itemTap", (e) => @toggle "clicked"
