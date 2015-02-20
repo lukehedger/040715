@@ -1,6 +1,32 @@
 <div class="wrapper">
 
-    <!-- <ui-nav /> -->
+    <header></header>
+
+    <!-- TODO - how does this fit into the module ecosystem -> is this one big containing module (that handles animated click events), with smaller modules for each item (with content etc)? -->
+    <!-- ui-grid, ui-item ?? -->
+
+    <div class="wrapper__row">
+        <div class="item--square"></div>
+        <div class="item--circle"></div>
+        <div class="item--rect"></div>
+        <div class="item--triangle"></div>
+    </div>
+    <div class="wrapper__row">
+        <div class="item--rect"></div>
+        <div class="item--circle"></div>
+        <div class="item--rect"></div>
+    </div>
+    <div class="wrapper__row">
+        <div class="item--square"></div>
+        <div class="item--circle"></div>
+        <div class="item--square"></div>
+        <div class="item--square"></div>
+        <div class="item--circle"></div>
+    </div>
+
+    <footer></footer>
+
+    <ui-nav />
 
     {{#view == 'index'}}
     Home
