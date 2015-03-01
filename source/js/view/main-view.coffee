@@ -40,8 +40,4 @@ module.exports = Ractive.extend
 			console.log "[main-view] index"
 			self.set "view": "index"
 
-		page "/test", (ctx) ->
-			console.log "[main-view] test"
-			self.set "view": "test"
-
 		page click: false, dispatch: true, hashbang: false

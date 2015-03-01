@@ -2,47 +2,9 @@
 	position: relative
 	size: 100%
 	margin: 0 auto
+	overflow: hidden
 	edit()
 
-header, footer
-	height: 5%
-	background: green
-
-header
-	border-bottom: 1px solid white
-
-.wrapper__row
-	height: 50%
-	border-bottom: 1px solid white
-
-	+above($media.medium)
-		height: 30%
-
-.item
-	col(1/1)
-	height: 20%
-
-	+above($media.medium)
-		col(1/5)
-		height: 100%
-
-.item--square
-	@extend .item
-
-.item--circle
-	@extend .item
-
-	+above($media.medium)
-		border-radius: 50%
-
-.item--triangle
-	@extend .item
-	// TODO - either responsive CSS or SVG?
-
-.item--rect
-	@extend .item
-	height: 40%
-
-	+above($media.medium)
-		col(2/5)
-		height: 100%
+.backdrop
+	size: 100%
+	background: linear-gradient(-2deg, #835890 0%, #3B0D5C 20%, #000 100%)

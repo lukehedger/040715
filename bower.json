@@ -1,5 +1,5 @@
 {
-  "name": "ractive-fire-app",
+  "name": "040715",
   "version": "0.0.0",
   "authors": [
     "Luke Hedger <luke.hedger@gmail.com>"
@@ -17,7 +17,8 @@
     "ractive": "0.6.x",
     "ractive-events-tap": "*",
     "domready": "~1.0.x",
-    "page": "~1.5.x"
+    "page": "~1.5.x",
+    "snap.svg": "~0.3.0"
   },
   "devDependencies": {},
   "resolutions": {

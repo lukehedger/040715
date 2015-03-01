@@ -1,0 +1,22 @@
+/**
+	@module:   abstract-scene
+	@author:   lukehedger <luke.hedger@gmail.com>
+	@css:      ./source/css/module/abstract-scene.styl
+	@js:       ./source/js/module/abstract-scene.coffee
+ */
+
+.scene
+	height: 100%
+	transition: transform 1s
+	// font-family: 'Pompiere'
+	transform: translateY(-100%)
+	transform: translateY(-200%)
+
+	&.active--day
+		transform: translateY(0)
+
+	&.active--digest
+		transform: translateY(-100%)
+
+	&.active--night
+		transform: translateY(-200%)
