@@ -13,6 +13,6 @@ module.exports = Module.extend
 
 	template: require "module/scene-night.html"
 
-	oninit: ->
-		console.log "scene-night :)"
+	oninit: -> @_super()
 
+	onrender: ->

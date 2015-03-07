@@ -18,5 +18,6 @@ module.exports = Module.extend
 	# 	right: "M33,0h41c0,0,5,9.871,5,29.871C79,49.871,74,60,74,60H32.666h-0.125H6c0,0,5-10,5-30S6,0,6,0H33"
 	# 	left: "M33,0h41c0,0-5,9.871-5,29.871C69,49.871,74,60,74,60H32.666h-0.125H6c0,0-5-10-5-30S6,0,6,0H33"
 
-	oninit: ->
-		console.log "scene-digest :)"
+	oninit: -> @_super()
+
+	onrender: ->

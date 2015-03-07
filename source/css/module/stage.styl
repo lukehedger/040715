@@ -1,0 +1,19 @@
+/**
+	@module:   stage
+	@author:   lukehedger <luke.hedger@gmail.com>
+	@css:      ./source/css/module/stage.styl
+	@js:       ./source/js/module/stage.coffee
+ */
+
+.stage
+	height: 100%
+	transition: transform 1s
+
+	&.day
+		transform: translateY(0)
+
+	&.digest
+		transform: translateY(-100%)
+
+	&.night
+		transform: translateY(-200%)

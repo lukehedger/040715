@@ -18,7 +18,9 @@
     "ractive-events-tap": "*",
     "domready": "~1.0.x",
     "page": "~1.5.x",
-    "snap.svg": "~0.3.0"
+    "gsap": "~1.16.0",
+    "ractive-transitions-slide": "~0.1.2",
+    "ractive-transitions-fade": "~0.1.2"
   },
   "devDependencies": {},
   "resolutions": {

@@ -7,16 +7,17 @@
 
 .scene
 	height: 100%
-	transition: transform 1s
-	// font-family: 'Pompiere'
-	transform: translateY(-100%)
-	transform: translateY(-200%)
+	position: relative
+	font-family: 'Pompiere'
 
-	&.active--day
-		transform: translateY(0)
+.stage__control
+	position: absolute
+	left: 50%
 
-	&.active--digest
-		transform: translateY(-100%)
+.stage__control--prev
+	@extend .stage__control
+	top: 10px
 
-	&.active--night
-		transform: translateY(-200%)
+.stage__control--next
+	@extend .stage__control
+	bottom: 10px

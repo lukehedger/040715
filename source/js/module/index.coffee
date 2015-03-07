@@ -10,6 +10,7 @@ register = ->
 	Ractive.components["ui-scene-day"] = require "./scene-day"
 	Ractive.components["ui-scene-digest"] = require "./scene-digest"
 	Ractive.components["ui-scene-night"] = require "./scene-night"
+	Ractive.components["ui-stage"] = require "./stage"
 	
 	true
 

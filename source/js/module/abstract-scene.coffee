@@ -8,11 +8,13 @@
 
 Module = require "./abstract-module"
 
-
 module.exports = Module.extend
 
 	template: require "module/abstract-scene.html"
 
-	oninit: ->
-		console.log "abstract-scene :)"
+	partials:
+		stageControls: require "partials/stage-controls.html"
 
+	oninit: ->
+		@on "goNextScene", -> @fire("nextScene")
+		@on "goPrevScene", -> @fire("prevScene")
