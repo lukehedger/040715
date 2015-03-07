@@ -7,5 +7,19 @@
 
 <div class="scene scene-digest">
 	{{>stageControls}}
-	<h1>scene-digest :)</h1>
+
+	<div class="showtime">
+		{{#slides:slide}}
+			{{#active}}
+			<div class="slide--{{slide}}" intro-outro="slide">
+				<h1>{{title}}</h1>
+				<p>{{body}}</p>
+				{{#links}}
+				{{.}}
+				{{/}}
+			</div>
+			{{/}}
+		{{/}}
+	</div>
+
 </div>
