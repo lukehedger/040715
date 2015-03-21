@@ -7,6 +7,7 @@ require "gsap"
 # require Ractive plugins
 require "ractive-events-tap"
 require "ractive-transitions-fade"
+require "ractive-transitions-fly"
 require "ractive-transitions-slide"
 
 # wait for when the dom is ready and load main view

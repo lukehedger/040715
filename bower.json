@@ -20,7 +20,8 @@
     "page": "~1.5.x",
     "gsap": "~1.16.0",
     "ractive-transitions-slide": "~0.1.2",
-    "ractive-transitions-fade": "~0.1.2"
+    "ractive-transitions-fade": "~0.1.2",
+    "ractive-transitions-fly": "https://github.com/lucasmotta/ractive-transitions-fly.git#~0.1.4"
   },
   "devDependencies": {},
   "resolutions": {

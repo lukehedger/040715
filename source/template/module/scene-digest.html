@@ -11,7 +11,7 @@
 	<div class="showtime">
 		{{#slides:slide}}
 			{{#active}}
-			<div class="slide--{{slide}}" intro-outro="slide">
+			<div class="slide--{{slide}}" intro-outro="fly:{ x:'{{x}}', y:'0%', opacity:1 }">
 				<h1>{{title}}</h1>
 				<p>{{body}}</p>
 				{{#links}}

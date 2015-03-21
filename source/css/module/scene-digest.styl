@@ -8,17 +8,26 @@
 .scene-digest
 	background-image: linear-gradient(0deg, #B09CAF, #DBF1FF)
 
+.showtime
+	size: 100%
+	position: relative
+
 .slide
 	align(both)
-	size: 100% 100%
+	size: 100%
 	background: white
 
 	+above($media.medium)
-		size: 75% 75%
+		size: 75%
 
 .slide--1
 	@extend .slide
-	background: yellow
+	background-color: $color.pink
 
 .slide--2
 	@extend .slide
+	background-color: $color.yellow
+
+.slide--3
+	@extend .slide
+	background-color: $color.turq
