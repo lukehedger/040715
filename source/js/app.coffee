@@ -6,6 +6,7 @@ require "gsap"
 
 # require Ractive plugins
 require "ractive-events-tap"
+require "ractive-touch"
 require "ractive-transitions-fade"
 require "ractive-transitions-fly"
 require "ractive-transitions-slide"

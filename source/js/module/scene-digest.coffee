@@ -34,15 +34,9 @@ module.exports = Module.extend
 	oninit: -> @_super()
 
 	onrender: ->
-		# TODO - slide data from firebase
-
-		@observe "active", (newValue) ->
-			if newValue
-				setInterval =>
-					@prevSlide()
-				, 4000
-
-		# TODO - add tap/swipe controls
+		# TODO - add swipe controls (ractive)
+		@on "goNextSlide", -> @nextSlide()
+		@on "goPrevSlide", -> @prevSlide()
 
 	nextSlide: ->
 		current = @get("current")
