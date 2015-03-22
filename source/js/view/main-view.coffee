@@ -13,9 +13,8 @@ module.exports = Ractive.extend
 	template: require "main-view.html"
 
 	data:
-		view: "map"
-		loggedin: false
-		guests: null
+		view: null
+		guest: null
 
 	oninit: () ->
 		console.log "[main-view] init"
@@ -28,8 +27,8 @@ module.exports = Ractive.extend
 		# TODO - load data/guests to firebase then get db.child("guests").on("value", ...)
 		db = new Firebase "https://#{config.firebase}.firebaseio.com/"
 		db.on "value", (snapshot) =>
-			@set "guests", snapshot.val()
-			console.log "ok:", @get("guests")
+			# TODO - check guest code against guests
+			console.log "ok:", snapshot.val()
 		, (err) ->
 		    console.log "err:", err.code
 
