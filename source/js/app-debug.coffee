@@ -7,7 +7,9 @@ gui = window._gui = new dat.GUI()
 options =
 	"debug": false
 	"index": -> page "/"
-	"test": -> page "/test"
+	"day": -> page "/day"
+	"digest": -> page "/digest"
+	"night": -> page "/night"
 
 module.exports = ->
 	# debug
@@ -16,5 +18,7 @@ module.exports = ->
 	# navigation
 	folder = gui.addFolder("navigation")
 	folder.add(options, "index").name("/index")
-	folder.add(options, "test").name("/test")
+	folder.add(options, "day").name("/day")
+	folder.add(options, "digest").name("/digest")
+	folder.add(options, "night").name("/night")
 	folder.open()

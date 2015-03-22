@@ -34,7 +34,6 @@ module.exports = Module.extend
 	oninit: -> @_super()
 
 	onrender: ->
-		# TODO - add swipe controls (ractive)
 		@on "goNextSlide", -> @nextSlide()
 		@on "goPrevSlide", -> @prevSlide()
 

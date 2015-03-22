@@ -7,7 +7,10 @@
 
 
 Module = require "./abstract-module"
+page = require "page"
+
 keys = require("mout").object.keys
+forIn = require("mout").object.forIn
 
 module.exports = Module.extend
 
@@ -15,14 +18,12 @@ module.exports = Module.extend
 
 	data:
 		current: 0
-		scene: null
 		scenes:
 			1: "day"
 			2: "digest"
 			3: "night"
 
 	oninit: ->
-		@setScene 1
 
 		window.onkeydown = (e) =>
 			@prevScene() if e.keyCode is 38
@@ -30,6 +31,10 @@ module.exports = Module.extend
 
 		@on "*.nextScene", -> @nextScene()
 		@on "*.prevScene", -> @prevScene()
+
+		@observe "view", (newValue) =>
+			if newValue
+				forIn(@get("scenes"), (v, k) => return @set current: parseInt(k,10) if v is newValue)
 
 	nextScene: ->
 		current = @get("current")
@@ -42,6 +47,4 @@ module.exports = Module.extend
 		@setScene prev
 
 	setScene: (scene) ->
-		@set
-			scene: @get("scenes.#{scene}")
-			current: scene
+		page "/#{@get("scenes.#{scene}")}"

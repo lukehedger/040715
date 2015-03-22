@@ -3,4 +3,22 @@
 	size: 100%
 	margin: 0 auto
 	overflow: hidden
-	// edit()
+
+.sky
+	size: 100% 300%
+	absolute: top 0 left 0
+	transition: transform 1s
+	// TODO - combined bkg-img
+	background-image: linear-gradient(#FFF 0%, #CCC 30%, #333 60%)
+	// background-image: linear-gradient(0deg, #F3F0FF, #B2D6EB)
+	// background-image: linear-gradient(0deg, #B09CAF, #DBF1FF)
+	// background-image: linear-gradient(0deg, #DA988B, #858585)
+
+	&.day
+		transform: translateY(0)
+
+	&.digest
+		transform: translateY(-33.333333333%)
+
+	&.night
+		transform: translateY(-66.666666666%)

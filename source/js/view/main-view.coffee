@@ -14,11 +14,10 @@ module.exports = Ractive.extend
 
 	data:
 		view: null
+		code: null
 		guest: null
 
 	oninit: () ->
-		console.log "[main-view] init"
-
 		@getData()
 
 		@set_router()
@@ -36,7 +35,9 @@ module.exports = Ractive.extend
 		self = @
 
 		page "/", ->
-			console.log "[main-view] index"
-			self.set "view": "index"
+			self.set "view": "day"
+
+		page "/:scene", (ctx) ->
+			self.set "view": ctx.params.scene
 
 		page click: false, dispatch: true, hashbang: false

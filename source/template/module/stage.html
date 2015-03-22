@@ -5,10 +5,53 @@
 	@js:       ./source/js/module/stage.coffee
 -->
 
-<div class="stage {{scene}}">
+<div class="stage">
 
-	<ui-scene-day active="{{scene == 'day' ? true : false}}" />
-	<ui-scene-digest active="{{scene == 'digest' ? true : false}}" />
-	<ui-scene-night active="{{scene == 'night' ? true : false}}" />
+	{{#view == 'day'}}
+	<ui-scene-day />
+	{{/}}
+	{{#view == 'digest'}}
+	<ui-scene-digest />
+	{{/}}
+	{{#view == 'night'}}
+	<ui-scene-night />
+	{{/}}
+
+	<!-- TODO - move farm to a partial -->
+	<div class="farm--{{view}}">
+		<div class="field"></div>
+		<div class="bunting">
+		    <div class="pole"></div>
+		</div>
+		<div class="trees">
+			<div class="tree--dark"></div>
+			<div class="tree"></div>
+			<div class="tree--dark"></div>
+			<div class="tree"></div>
+		</div>
+		<div class="tents">
+			<div class="tent">
+                <div class="canvas">
+                    <div class="awning"></div>
+                    <div class="flaps"></div>
+                </div>
+			</div>
+			<div class="tent--blue">
+                <div class="canvas">
+                    <div class="awning"></div>
+                    <div class="flaps"></div>
+                </div>
+			</div>
+			<div class="tent--pink">
+                <div class="canvas">
+                    <div class="awning"></div>
+                    <div class="flaps"></div>
+                </div>
+			</div>
+		</div>
+        <div class="fire">
+            <div class="logs"></div>
+        </div>
+	</div>
 
 </div>
