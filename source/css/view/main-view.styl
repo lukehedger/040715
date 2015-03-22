@@ -4,30 +4,21 @@
     fixed: bottom 0px
     z-index: 1
 
-// hills
-.hill
-    size: 300px
-    border-radius: 25%
-    background-color: $color.green
-    transform: rotate(45deg)
-    absolute: left -10% bottom -200px
+// field
+.field
+    size: 100% 100px
+    background-color: lighten($color.green, 30%)
+    absolute: bottom 0
 
-    &:nth-child(1)
-        border-radius: 40%
-        left: 10%
-        background-color: lighten($color.green, 30%)
+// bunting
+.bunting
+    size: 100% 300px
+    absolute: bottom 10px
 
-    &:nth-child(2)
-        size: 200px
-        border-radius: 25%
-        left: 30%
-        bottom: -120px
-
-    &:nth-child(3)
-        left: 60%
-
-    &:nth-child(4)
-        left: 80%
+.pole
+    align(horizontal)
+    size: 4px 300px
+    background-color: $color.brown
 
 // trees
 .tree
@@ -86,24 +77,18 @@
         border-color: transparent transparent darken($color.pine, 10) transparent
 
 // tents
-.tents
-    absolute: bottom -50px
-
 .tent
     width: 140px
     height: 170px
     display: inline-block
-    position: relative
-    transform: scale(0.6)
+    absolute: right 0 bottom 30px
+    transform: scale(0.8)
 
     &:nth-child(1)
-        left: 200px
+        right: 250px
 
     &:nth-child(2)
-        left: 750px
-
-    &:nth-child(3)
-        left: 700px
+        right: 125px
 
 .tent--blue
     @extend .tent
@@ -201,7 +186,7 @@
     transform: rotate(-45deg) scale(0.2)
     z-index: 2
     background: $color.orange
-    absolute: bottom -35px left 675px
+    absolute: bottom -20px right 145px
 
 .fire:after
     content: ""
