@@ -16,6 +16,10 @@ module.exports = Module.extend
 
 	template: require "module/stage.html"
 
+	partials:
+		stageControls: require "partials/stage-controls.html"
+		farm: require "partials/farm.html"
+
 	data:
 		current: 0
 		scenes:
@@ -29,8 +33,8 @@ module.exports = Module.extend
 			@prevScene() if e.keyCode is 38
 			@nextScene() if e.keyCode is 40
 
-		@on "*.nextScene", -> @nextScene()
-		@on "*.prevScene", -> @prevScene()
+		@on "goNextScene", -> @nextScene()
+		@on "goPrevScene", -> @prevScene()
 
 		@observe "view", (newValue) =>
 			if newValue

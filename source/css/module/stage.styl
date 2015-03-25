@@ -9,6 +9,29 @@
 	size: 100%
 	absolute: top 0 left 0
 
+// controls
+.stage__control
+	z-index: 99
+	size: 100% 30px
+	position: absolute
+	cursor: pointer
+	opacity: 0.7
+	transition: 0.2s
+
+	&:hover, &:focus
+		opacity: 1
+
+	svg
+		align(horizontal)
+		size: 50px auto
+
+.stage__control--prev
+	@extend .stage__control
+	top: 10px
+.stage__control--next
+	@extend .stage__control
+	bottom: 10px
+
 // the whole farm
 .farm
 	size: 100% 50%
