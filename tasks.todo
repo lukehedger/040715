@@ -1,0 +1,39 @@
+Invite:
+    ☐ reflect scene changes day/night
+    ☐ scene intro-outro: fly
+
+    ☐ SVG next/prev icons <( )>
+    ☐ SVG sun w/rays
+    ☐ sun animation: scale in and draw ray paths
+    ☐ SVG cable path (for flags and lights)
+    ☐ SVG field camber
+    ☐ SVG flag (repeated along cable path)
+    ☐ flag animation (wind blowing)
+
+    ☐ greeting content/style
+    ☐ slide styles + floral assets
+    ☐ data: slide content
+    ☐ rsvp content/message box/style
+    ☐ data: guests -> https://www.firebase.com/docs/web/guide/structuring-data.html
+
+    ☐ refine farm scene | mobile
+    ☐ <IE9 message - use platform.js
+
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+Archive:
+
+    ✔ fix digest teardown bug @done(2015-03-25 19:21) @project(Invite)
+    ✔ refine gradients @done(2015-03-22 18:09) @project(Invite)
+    ✔ sort out structure @done(2015-03-22 17:19) @project(Invite)
+    ✘ CSS clouds? @cancelled(2015-03-21 20:09) @project(Invite)
+    ✔ slideshow swipe @done(2015-03-21 20:02) @project(Invite)
+    ✔ slideshow controls @done(2015-03-21 19:32) @project(Invite)
+    ✔ framework: animator @done(2015-03-07 14:28) @project(Invite)
+    ✔ scroll between @done(2015-03-07 17:21) @project(Invite)
+    ✔ arrow controls @done(2015-03-07 17:37) @project(Invite)
+    ✔ slideshow: transition effect @done(2015-03-21 13:52) @project(Invite)
+    ✔ CSS tent @done(2015-03-08 17:05) @project(Invite)
+    ✔ CSS fire @done(2015-03-08 17:13) @project(Invite)
+    ✔ CSS festoon lights @done(2015-03-08 17:23) @project(Invite)
+    ✔ css hills @done(2015-03-21 16:27) @project(Invite)
+    ✔ css assets @done(2015-03-21 16:27) @project(Invite)
