@@ -59,11 +59,17 @@
 	transform: scaleX(-1)
 
 // flags
-// TODO - triangle
 .flag
-	size: 50px
-	background-color: red
+	size: 0
+	border-style: solid
+	border-width: 50px 25px 0 25px
+	border-color: $color.blue transparent transparent transparent
 	position: absolute
+
+	&:first-of-type
+		top: 5px
+		left: 0
+		transform: rotate(10deg)
 
 // field
 .field

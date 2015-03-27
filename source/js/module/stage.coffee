@@ -45,13 +45,15 @@ module.exports = Module.extend
 
 		cable = @find(".cable--left")
 		left = @find(".cable--left svg path")
-		len = left.getTotalLength()
-		console.log left.getPointAtLength(len)
+		# len = left.getTotalLength()
+		# point = left.getPointAtLength(len)
 		div = document.createElement "div"
 		AddClass div, "flag"
-		# TODO - set top: y, left: x
-		# div.style
+		# div.style.top = "#{point.y}px"
+		# div.style.left = "#{point.x}px"
 		cable.appendChild div
+		# TODO - dont use svg.path to plot flags - instead get path.width / flag.width = how many flags to add
+		# add flags side by side, what about rotation?
 
 	nextScene: ->
 		current = @get("current")
