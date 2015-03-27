@@ -11,6 +11,7 @@ page = require "page"
 
 keys = require("mout").object.keys
 forIn = require("mout").object.forIn
+AddClass = require "../util/addClass"
 
 module.exports = Module.extend
 
@@ -39,6 +40,18 @@ module.exports = Module.extend
 		@observe "view", (newValue) =>
 			if newValue
 				forIn(@get("scenes"), (v, k) => return @set current: parseInt(k,10) if v is newValue)
+
+	onrender: ->
+
+		cable = @find(".cable--left")
+		left = @find(".cable--left svg path")
+		len = left.getTotalLength()
+		console.log left.getPointAtLength(len)
+		div = document.createElement "div"
+		AddClass div, "flag"
+		# TODO - set top: y, left: x
+		# div.style
+		cable.appendChild div
 
 	nextScene: ->
 		current = @get("current")

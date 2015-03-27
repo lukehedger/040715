@@ -46,11 +46,33 @@
 .farm--night
 	@extend .farm
 
+// bunting
+.cable
+	size: 50% auto
+	absolute: top 0
+.cable--left
+	@extend .cable
+	left: 0
+.cable--right
+	@extend .cable
+	right: 0
+	transform: scaleX(-1)
+
+// flags
+// TODO - triangle
+.flag
+	size: 50px
+	background-color: red
+	position: absolute
+
 // field
 .field
 	size: 100% 100px
 	background-color: lighten($color.green, 30%)
 	absolute: bottom 0
+.camber
+	size: 100% auto
+	absolute: bottom 90px right -10px
 
 // bunting
 .bunting

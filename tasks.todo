@@ -1,13 +1,12 @@
 Invite:
-    ☐ reflect scene changes day/night
     ☐ scene intro-outro: fly
-
-    ☐ SVG next/prev icons <( )>
-    ☐ SVG sun w/rays
-    ☐ sun animation: scale in and draw ray paths
-    ☐ SVG cable path (for flags and lights)
-    ☐ SVG field camber
+    ☐ slide next/prev icons <( )>
     ☐ SVG flag (repeated along cable path)
+    ☐ reflect scene changes day/night
+
+    ☐ SVG sun w/rays
+
+    ☐ sun animation: scale in and draw ray paths
     ☐ flag animation (wind blowing)
 
     ☐ greeting content/style
@@ -22,6 +21,8 @@ Invite:
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
 
+    ✔ SVG field camber @done(2015-03-27 10:14)
+    ✔ SVG cable path (for flags and lights) @done(2015-03-26 17:53)
     ✔ fix digest teardown bug @done(2015-03-25 19:21) @project(Invite)
     ✔ refine gradients @done(2015-03-22 18:09) @project(Invite)
     ✔ sort out structure @done(2015-03-22 17:19) @project(Invite)
