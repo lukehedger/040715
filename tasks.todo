@@ -1,19 +1,17 @@
 Invite:
-    ☐ flags (repeated along cable path)
     ☐ scene intro-outro: fly
     ☐ slide next/prev icons <( )>
     ☐ reflect scene changes day/night
-
-    ☐ SVG sun w/rays
-
     ☐ sun animation: scale in and draw ray paths
+    ☐ flags (repeated along cable path)
     ☐ flag animation (wind blowing)
 
     ☐ greeting content/style
     ☐ slide styles + floral assets
     ☐ data: slide content
     ☐ rsvp content/message box/style
-    ☐ data: guests -> https://www.firebase.com/docs/web/guide/structuring-data.html
+
+    ☐ data: guests / messages
 
     ☐ refine farm scene | mobile
     ☐ <IE9 message - use platform.js
@@ -21,6 +19,7 @@ Invite:
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
 
+    ✔ SVG sun w/rays @done(2015-03-27 14:03) @project(Invite)
     ✔ SVG field camber @done(2015-03-27 10:14)
     ✔ SVG cable path (for flags and lights) @done(2015-03-26 17:53)
     ✔ fix digest teardown bug @done(2015-03-25 19:21) @project(Invite)

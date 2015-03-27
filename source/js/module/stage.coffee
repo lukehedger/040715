@@ -43,6 +43,14 @@ module.exports = Module.extend
 
 	onrender: ->
 
+		# sun
+		line = @find("line")
+		# TODO - this dont work!
+		# console.log line.getTotalLength()
+		# length = line.getTotalLength()
+		# TweenMax.to(line, 2, { delay: 1, 'stroke-dashoffset': length, ease:Bounce.easeOut })
+
+		# TODO - flags test
 		cable = @find(".cable--left")
 		left = @find(".cable--left svg path")
 		# len = left.getTotalLength()
