@@ -1,6 +1,7 @@
 Invite:
     ☐ scene intro-outro: fly
     ☐ slide next/prev icons <( )>
+    ☐ scroll controls
     ☐ reflect scene changes day/night
     ☐ sun animation: scale in and draw ray paths
     ☐ flags (repeated along cable path)
