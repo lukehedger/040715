@@ -20,6 +20,7 @@ module.exports = Module.extend
 	partials:
 		stageControls: require "partials/stage-controls.html"
 		farm: require "partials/farm.html"
+		sun: require "partials/sun.html"
 
 	data:
 		current: 0

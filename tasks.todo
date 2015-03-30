@@ -1,25 +1,23 @@
 Invite:
-    ☐ scene intro-outro: fly
-    ☐ slide next/prev icons <( )>
     ☐ scroll controls
-    ☐ reflect scene changes day/night
-    ☐ sun animation: scale in and draw ray paths
-    ☐ flags (repeated along cable path)
+    ☐ slide next/prev icons <( )>
+    ☐ SVG flags
     ☐ flag animation (wind blowing)
-
     ☐ greeting content/style
+    ☐ data: content/slides | guests | messages
+    ☐ <IE9 message - use platform.js
+
     ☐ slide styles + floral assets
-    ☐ data: slide content
     ☐ rsvp content/message box/style
 
-    ☐ data: guests / messages
-
+    ☐ scene intro-outro: fly - ?
+    ☐ reflect scene changes day/night
     ☐ refine farm scene | mobile
-    ☐ <IE9 message - use platform.js
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
 
+    ✘ sun animation: scale in and draw ray paths @cancelled(2015-03-30 10:53) @project(Invite)
     ✔ SVG sun w/rays @done(2015-03-27 14:03) @project(Invite)
     ✔ SVG field camber @done(2015-03-27 10:14)
     ✔ SVG cable path (for flags and lights) @done(2015-03-26 17:53)
