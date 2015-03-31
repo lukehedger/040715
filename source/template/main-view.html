@@ -1,6 +1,12 @@
 <div class="wrapper">
 
+    {{#supported}}
     <div class="sky {{view}}"></div>
     <ui-stage view={{view}} />
+    {{/}}
+
+    {{^supported}}
+    <div class="unsupported">Sorry, you need a <a href="http://outdatedbrowser.com/en">better browser</a>!</div>
+    {{/}}
 
 </div>

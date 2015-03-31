@@ -1,6 +1,7 @@
 Ractive = require "ractive"
 Firebase = require "firebase"
 page = require "page"
+Supported = require "../util/supported"
 
 config = require "../config"
 
@@ -16,8 +17,14 @@ module.exports = Ractive.extend
 		view: null
 		code: null
 		guest: null
+		supported: true
 
 	oninit: () ->
+		# catch unsupported
+		@set supported: Supported()
+		return if !@get("supported")
+
+		# get Firebase data
 		@getData()
 
 		@set_router()
@@ -28,6 +35,7 @@ module.exports = Ractive.extend
 		db.on "value", (snapshot) =>
 			# TODO - check guest code against guests
 			console.log "ok:", snapshot.val()
+			# set loaded: true -> only reveal site on loaded, to auth'd users
 		, (err) ->
 		    console.log "err:", err.code
 
