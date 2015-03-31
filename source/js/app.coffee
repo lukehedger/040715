@@ -5,6 +5,7 @@ require "./module/index"
 require "gsap"
 
 # require Ractive plugins
+require "ractive-events-mousewheel"
 require "ractive-events-tap"
 require "ractive-touch"
 require "ractive-transitions-fade"

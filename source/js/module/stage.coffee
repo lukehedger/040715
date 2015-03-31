@@ -11,6 +11,7 @@ page = require "page"
 
 keys = require("mout").object.keys
 forIn = require("mout").object.forIn
+throttle = require("mout").function.throttle
 AddClass = require "../util/addClass"
 
 module.exports = Module.extend
@@ -35,6 +36,18 @@ module.exports = Module.extend
 			@prevScene() if e.keyCode is 38
 			@nextScene() if e.keyCode is 40
 
+		lazyUp = throttle(@prevScene.bind(@), 3000)
+		lazyDown = throttle(@nextScene.bind(@), 3000)
+
+		@on "scroll", (e) =>
+			pageY = e.original.pageY
+			if pageY < 80
+				e.original.preventDefault()
+				lazyUp()
+			if pageY > 540
+				e.original.preventDefault()
+				lazyDown()
+
 		@on "goNextScene", -> @nextScene()
 		@on "goPrevScene", -> @prevScene()
 
@@ -44,25 +57,6 @@ module.exports = Module.extend
 
 	onrender: ->
 
-		# sun
-		line = @find("line")
-		# TODO - this dont work!
-		# console.log line.getTotalLength()
-		# length = line.getTotalLength()
-		# TweenMax.to(line, 2, { delay: 1, 'stroke-dashoffset': length, ease:Bounce.easeOut })
-
-		# TODO - flags test
-		cable = @find(".cable--left")
-		left = @find(".cable--left svg path")
-		# len = left.getTotalLength()
-		# point = left.getPointAtLength(len)
-		div = document.createElement "div"
-		AddClass div, "flag"
-		# div.style.top = "#{point.y}px"
-		# div.style.left = "#{point.x}px"
-		cable.appendChild div
-		# TODO - dont use svg.path to plot flags - instead get path.width / flag.width = how many flags to add
-		# add flags side by side, what about rotation?
 
 	nextScene: ->
 		current = @get("current")
