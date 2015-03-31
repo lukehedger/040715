@@ -15,6 +15,9 @@ module.exports = Ractive.extend
 
 	template: require "main-view.html"
 
+	partials:
+		loader: require "partials/loader.html"
+
 	data:
 		code: null
 		view: null
@@ -41,12 +44,13 @@ module.exports = Ractive.extend
 		db = new Firebase "https://#{config.firebase}.firebaseio.com/"
 		db.on "value", (snapshot) =>
 			data = snapshot.val()
-			@set authorised: if code in keys(data.guests) then true else false
+			@set
+				authorised: if code in keys(data.guests) then true else false
+				loaded: true
 			return if !@get("authorised")
 			@set
 				content: data.content
 				guest: data.guests["#{code}"]
-				loaded: true
 		, (err) ->
 		    console.log "err:", err.code
 

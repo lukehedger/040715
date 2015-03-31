@@ -3,6 +3,15 @@
     font-size: 30px
     text-transform: uppercase
 
+.info--loading
+    @extend .info
+
+    .tree
+        align(horizontal)
+        bottom: 70px !important
+        left: 50% !important
+
 .info--unsupported
+    @extend .info
     a
         color: $color.turq

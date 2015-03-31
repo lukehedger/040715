@@ -1,5 +1,4 @@
 Invite:
-    ☐ loader
     ☐ SVG flags and colours
     ☐ flag animation (wind blowing)
 
@@ -14,6 +13,7 @@ Invite:
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
 
+    ✔ loader @done(2015-03-31 17:31) @project(Invite)
     ✔ remove nav module @done(2015-03-31 16:08) @project(Invite)
     ✔ change day to morning | digest to day @done(2015-03-31 16:06) @project(Invite)
     ✔ data: slides (read only) | guests (read only) | messages (write only) @done(2015-03-31 14:31) @project(Invite)
