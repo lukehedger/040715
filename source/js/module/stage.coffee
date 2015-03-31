@@ -36,15 +36,15 @@ module.exports = Module.extend
 			@prevScene() if e.keyCode is 38
 			@nextScene() if e.keyCode is 40
 
-		lazyUp = throttle(@prevScene.bind(@), 3000)
-		lazyDown = throttle(@nextScene.bind(@), 3000)
+		lazyUp = throttle(@prevScene.bind(@), 1000)
+		lazyDown = throttle(@nextScene.bind(@), 1000)
 
 		@on "scroll", (e) =>
 			pageY = e.original.pageY
-			if pageY < 80
+			if pageY < 20
 				e.original.preventDefault()
 				lazyUp()
-			if pageY > 540
+			if pageY > 580
 				e.original.preventDefault()
 				lazyDown()
 
@@ -54,9 +54,6 @@ module.exports = Module.extend
 		@observe "view", (newValue) =>
 			if newValue
 				forIn(@get("scenes"), (v, k) => return @set current: parseInt(k,10) if v is newValue)
-
-	onrender: ->
-
 
 	nextScene: ->
 		current = @get("current")
@@ -69,4 +66,4 @@ module.exports = Module.extend
 		@setScene prev
 
 	setScene: (scene) ->
-		page "/#{@get("scenes.#{scene}")}"
+		page "/#{@get("code")}/#{@get("scenes.#{scene}")}"

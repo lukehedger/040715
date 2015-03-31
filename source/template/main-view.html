@@ -1,12 +1,25 @@
 <div class="wrapper">
 
     {{#supported}}
+
+    {{#authorised}}
+    {{#loaded}}
     <div class="sky {{view}}"></div>
-    <ui-stage view={{view}} />
+    <ui-stage view={{view}} code={{code}} content={{content}} guest={{guest}} />
+    {{/}}
+    {{^loaded}}
+    <div class="info--loading">Loading...</div>
+    {{/}}
+    {{/}}
+
+    {{^authorised}}
+    <div class="info">Sorry, you need an invite ;)</div>
+    {{/}}
+
     {{/}}
 
     {{^supported}}
-    <div class="unsupported">Sorry, you need a <a href="http://outdatedbrowser.com/en">better browser</a>!</div>
+    <div class="info--unsupported">Sorry, you need a <a href="http://outdatedbrowser.com/en">better browser</a>!</div>
     {{/}}
 
 </div>

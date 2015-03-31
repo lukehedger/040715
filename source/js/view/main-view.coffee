@@ -1,7 +1,9 @@
 Ractive = require "ractive"
 Firebase = require "firebase"
 page = require "page"
+
 Supported = require "../util/supported"
+keys = require("mout").object.keys
 
 config = require "../config"
 
@@ -14,38 +16,47 @@ module.exports = Ractive.extend
 	template: require "main-view.html"
 
 	data:
-		view: null
 		code: null
+		view: null
+		content: null
 		guest: null
+		authorised: false
+		loaded: false
 		supported: true
 
 	oninit: () ->
+		@set_router()
+
 		# catch unsupported
 		@set supported: Supported()
 		return if !@get("supported")
 
-		# get Firebase data
-		@getData()
+		# check code
+		@observe "code", (newValue) ->
+			if newValue?
+				# get Firebase data
+				@getData newValue
 
-		@set_router()
-
-	getData: ->
-		# TODO - load data/guests to firebase then get db.child("guests").on("value", ...)
+	getData: (code) ->
 		db = new Firebase "https://#{config.firebase}.firebaseio.com/"
 		db.on "value", (snapshot) =>
-			# TODO - check guest code against guests
-			console.log "ok:", snapshot.val()
-			# set loaded: true -> only reveal site on loaded, to auth'd users
+			data = snapshot.val()
+			@set authorised: if code in keys(data.guests) then true else false
+			return if !@get("authorised")
+			@set
+				content: data.content
+				guest: data.guests["#{code}"]
+				loaded: true
 		, (err) ->
 		    console.log "err:", err.code
 
 	set_router: ->
 		self = @
 
-		page "/", ->
-			self.set "view": "day"
-
-		page "/:scene", (ctx) ->
-			self.set "view": ctx.params.scene
+		# TODO - change default from "day" to "morning"
+		page "/:code/:scene?", (ctx) ->
+			self.set
+				code: ctx.params.code
+				view: if ctx.params.scene? then ctx.params.scene else "day"
 
 		page click: false, dispatch: true, hashbang: false

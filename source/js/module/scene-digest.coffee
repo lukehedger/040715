@@ -20,20 +20,6 @@ module.exports = Module.extend
 	data:
 		current: 0
 		x: ["100%", "-200%"]
-		slides:
-			1:
-				title: "slide 1"
-				body: "this is slide 1"
-				links: ["a","b"]
-				active: false
-			2:
-				title: "slide 2"
-				body: "this is slide 2"
-				active: false
-			3:
-				title: "slide 3"
-				body: "this is slide 3"
-				active: false
 
 	oninit: -> @_super()
 

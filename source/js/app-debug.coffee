@@ -6,10 +6,10 @@ gui = window._gui = new dat.GUI()
 
 options =
 	"debug": false
-	"index": -> page "/"
-	"day": -> page "/day"
-	"digest": -> page "/digest"
-	"night": -> page "/night"
+	"index": -> page "/aandl"
+	"day": -> page "/aandl/day"
+	"digest": -> page "/aandl/digest"
+	"night": -> page "/aandl/night"
 
 module.exports = ->
 	# debug

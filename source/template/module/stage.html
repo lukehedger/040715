@@ -11,13 +11,13 @@
 	{{>sun}}
 
 	{{#view == 'day'}}
-	<ui-scene-day />
+	<ui-scene-day guest="{{guest}}" />
 	{{/}}
 	{{#view == 'digest'}}
-	<ui-scene-digest />
+	<ui-scene-digest guest="{{guest}}" slides="{{content.slides}}" />
 	{{/}}
 	{{#view == 'night'}}
-	<ui-scene-night />
+	<ui-scene-night guest="{{guest}}" />
 	{{/}}
 
 	{{>farm {view:view} }}

@@ -1,19 +1,21 @@
 Invite:
-    ☐ data: content/slides | guests | messages
+    ☐ change day to morning | digest to day
+    ☐ loader
     ☐ SVG flags and colours
     ☐ flag animation (wind blowing)
-    ☐ greeting content/style
-
-    ☐ slide styles + floral assets
-    ☐ rsvp content/message box/style
 
     ☐ scene intro-outro: fly - ?
     ☐ reflect scene changes day/night
     ☐ refine farm scene | mobile
 
+    ☐ greeting content/style
+    ☐ slide styles + floral assets
+    ☐ rsvp content/message box/style
+
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
 
+    ✔ data: slides (read only) | guests (read only) | messages (write only) @done(2015-03-31 14:31) @project(Invite)
     ✔ slide next/prev icons <( )> @done(2015-03-31 11:47) @project(Invite)
     ✔ <IE9 message - use platform.js @done(2015-03-31 11:14) @project(Invite)
     ✔ scroll controls @done(2015-03-31 10:54) @project(Invite)
