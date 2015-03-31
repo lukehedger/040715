@@ -1,6 +1,5 @@
 Invite:
     ☐ data: content/slides | guests | messages
-    ☐ slide next/prev icons <( )>
     ☐ SVG flags and colours
     ☐ flag animation (wind blowing)
     ☐ greeting content/style
@@ -15,6 +14,7 @@ Invite:
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
 
+    ✔ slide next/prev icons <( )> @done(2015-03-31 11:47) @project(Invite)
     ✔ <IE9 message - use platform.js @done(2015-03-31 11:14) @project(Invite)
     ✔ scroll controls @done(2015-03-31 10:54) @project(Invite)
     ✘ sun animation: scale in and draw ray paths @cancelled(2015-03-30 10:53) @project(Invite)

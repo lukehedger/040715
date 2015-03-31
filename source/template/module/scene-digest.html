@@ -8,10 +8,7 @@
 <div class="scene scene-digest">
 
 	<div class="showtime" on-swiperight="goPrevSlide" on-swipeleft="goNextSlide">
-		<div class="showtime__controls">
-			<a class="showtime__control--prev" on-tap="goPrevSlide">&larr;</a>
-			<a class="showtime__control--next" on-tap="goNextSlide">&rarr;</a>
-		</div>
+		{{>slideControls}}
 		{{#slides:slide}}
 			{{#active}}
 			<div class="slide--{{slide}}" intro-outro="fly:{ x:'{{x}}', y:'0%', opacity:1 }">

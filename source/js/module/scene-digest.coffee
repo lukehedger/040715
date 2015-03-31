@@ -14,6 +14,9 @@ module.exports = Module.extend
 
 	template: require "module/scene-digest.html"
 
+	partials:
+		slideControls: require "partials/slide-controls.html"
+
 	data:
 		current: 0
 		x: ["100%", "-200%"]
