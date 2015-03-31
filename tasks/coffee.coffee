@@ -47,7 +47,7 @@ coffeeError = (error) ->
   gutil.log gutil.colors.red("CoffeeScript Error:"), error
 
   notifier.notify
-    title: "Rubber Tracks"
+    title: "040715"
     message: "Error compiling CoffeeScript"
     icon: "#{settings.path.root}/branding.png"
     sound: "Basso"
