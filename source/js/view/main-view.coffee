@@ -53,10 +53,9 @@ module.exports = Ractive.extend
 	set_router: ->
 		self = @
 
-		# TODO - change default from "day" to "morning"
 		page "/:code/:scene?", (ctx) ->
 			self.set
 				code: ctx.params.code
-				view: if ctx.params.scene? then ctx.params.scene else "day"
+				view: if ctx.params.scene? then ctx.params.scene else "morning"
 
 		page click: false, dispatch: true, hashbang: false

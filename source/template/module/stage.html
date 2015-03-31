@@ -10,11 +10,11 @@
 
 	{{>sun}}
 
-	{{#view == 'day'}}
-	<ui-scene-day guest="{{guest}}" />
+	{{#view == 'morning'}}
+	<ui-scene-morning guest="{{guest}}" />
 	{{/}}
-	{{#view == 'digest'}}
-	<ui-scene-digest guest="{{guest}}" slides="{{content.slides}}" />
+	{{#view == 'day'}}
+	<ui-scene-day guest="{{guest}}" slides="{{content.slides}}" />
 	{{/}}
 	{{#view == 'night'}}
 	<ui-scene-night guest="{{guest}}" />

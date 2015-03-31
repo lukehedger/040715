@@ -26,8 +26,8 @@ module.exports = Module.extend
 	data:
 		current: 0
 		scenes:
-			1: "day"
-			2: "digest"
+			1: "morning"
+			2: "day"
 			3: "night"
 
 	oninit: ->

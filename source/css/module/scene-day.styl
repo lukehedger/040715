@@ -8,26 +8,53 @@
 .scene-day
 	//
 
-// sun
-// path
-// 	stroke-dasharray: 100
-// 	stroke-dashoffset: 100
+.showtime
+	size: 100%
+	position: relative
 
-// greeting
-.greeting
-	align(horizontal)
-	top: 15%
-	size: 75%
-	text-align: center
-	color: $color.petrol
+.showtime__control
+	align(vertical)
+	height: 90px
+	width: 45px
+	background-color: rgba(255,255,255,0.9)
+	cursor: pointer
+	z-index: 10
+
+	svg
+		align(both)
+		size: 25px auto
+
+.showtime__control--prev
+	@extend .showtime__control
+	left: 0
+	border-radius: 0 90px 90px 0
+
+.showtime__control--next
+	@extend .showtime__control
+	right: 0
+	border-radius: 90px 0px 0px 90px
+
+.slide
+	align(both)
+	size: 100%
+	background: white
 
 	+above($media.medium)
-		size: 50%
+		size: 75%
 
-	p
-		font-size: 30px
-		font-family: $font.secondary
-		// text-transform: uppercase
+.slide--1
+	@extend .slide
+	background-color: $color.pink
 
-// .date
-// 	color: $color.pink
+.slide--2
+	@extend .slide
+	background-color: $color.yellow
+
+.slide--3
+	@extend .slide
+	background-color: $color.turq
+
+.flower
+	size: 170px 120px
+	background: url("../img/floral.png") no-repeat -800px -227px
+	absolute: bottom 0 left 0

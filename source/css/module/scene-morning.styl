@@ -1,0 +1,33 @@
+/**
+	@module:   scene-morning
+	@author:   lukehedger <luke.hedger@gmail.com>
+	@css:      ./source/css/module/scene-morning.styl
+	@js:       ./source/js/module/scene-morning.coffee
+ */
+
+.scene-morning
+	//
+
+// sun
+// path
+// 	stroke-dasharray: 100
+// 	stroke-dashoffset: 100
+
+// greeting
+.greeting
+	align(horizontal)
+	top: 15%
+	size: 75%
+	text-align: center
+	color: $color.petrol
+
+	+above($media.medium)
+		size: 50%
+
+	p
+		font-size: 30px
+		font-family: $font.secondary
+		// text-transform: uppercase
+
+// .date
+// 	color: $color.pink
