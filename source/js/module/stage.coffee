@@ -11,7 +11,6 @@ page = require "page"
 
 keys = require("mout").object.keys
 forIn = require("mout").object.forIn
-throttle = require("mout").function.throttle
 AddClass = require "../util/addClass"
 
 module.exports = Module.extend
@@ -35,18 +34,6 @@ module.exports = Module.extend
 		window.onkeydown = (e) =>
 			@prevScene() if e.keyCode is 38
 			@nextScene() if e.keyCode is 40
-
-		lazyUp = throttle(@prevScene.bind(@), 1000)
-		lazyDown = throttle(@nextScene.bind(@), 1000)
-
-		@on "scroll", (e) =>
-			pageY = e.original.pageY
-			if pageY < 20
-				e.original.preventDefault()
-				lazyUp()
-			if pageY > 580
-				e.original.preventDefault()
-				lazyDown()
 
 		@on "goNextScene", -> @nextScene()
 		@on "goPrevScene", -> @prevScene()

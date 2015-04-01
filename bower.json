@@ -23,7 +23,6 @@
     "ractive-transitions-fade": "~0.1.2",
     "ractive-transitions-fly": "https://github.com/lucasmotta/ractive-transitions-fly.git#~0.1.4",
     "ractive-touch": "~0.4.0",
-    "ractive-events-mousewheel": "https://github.com/ractivejs/ractive-events-mousewheel.git#~0.1.0",
     "platform": "~1.3.0"
   },
   "devDependencies": {},
