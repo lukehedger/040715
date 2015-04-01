@@ -2,18 +2,20 @@
 
     {{#supported}}
 
-    {{#loaded}}
     {{#authorised}}
+
+    {{#loaded}}
     <div class="sky {{view}}"></div>
     <ui-stage view={{view}} code={{code}} content={{content}} guest={{guest}} />
     {{/}}
-    {{^authorised}}
-    <div class="info">Sorry, you need an invite ;)</div>
-    {{/}}
-    {{/}}
-
     {{^loaded}}
     {{>loader}}
+    {{/}}
+
+    {{/}}
+
+    {{^authorised}}
+    <div class="info">Sorry, you need an invite ;)</div>
     {{/}}
 
     {{/}}

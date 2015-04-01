@@ -1,10 +1,10 @@
 Invite:
     ☐ SVG flags and colours
-    ☐ flag animation (wind blowing)
+    ☐ flag animation (wind blowing) -> skew/scale http://codepen.io/GriffinArtworks/pen/wkrIK
 
-    ☐ scene intro-outro: fly - ?
+    ☐ refine farm scene | mobile -> fire scale_in
     ☐ reflect scene changes day/night
-    ☐ refine farm scene | mobile
+    ☐ scene intro-outro: fly - ?
 
     ☐ greeting content/style
     ☐ slide styles + floral assets

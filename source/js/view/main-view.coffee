@@ -23,34 +23,32 @@ module.exports = Ractive.extend
 		view: null
 		content: null
 		guest: null
-		authorised: false
+		authorised: true
 		loaded: false
 		supported: true
 
-	oninit: () ->
+	oninit: ->
 		@set_router()
 
 		# catch unsupported
 		@set supported: Supported()
 		return if !@get("supported")
 
+	onrender: ->
 		# check code
-		@observe "code", (newValue) ->
-			if newValue?
-				# get Firebase data
-				@getData newValue
+		code = @get("code")
+		if code? then @getData(code) else @set("authorised", false)
 
 	getData: (code) ->
 		db = new Firebase "https://#{config.firebase}.firebaseio.com/"
 		db.on "value", (snapshot) =>
 			data = snapshot.val()
-			@set
-				authorised: if code in keys(data.guests) then true else false
-				loaded: true
+			@set authorised: if code in keys(data.guests) then true else false
 			return if !@get("authorised")
 			@set
 				content: data.content
 				guest: data.guests["#{code}"]
+				loaded: true
 		, (err) ->
 		    console.log "err:", err.code
 
