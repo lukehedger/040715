@@ -16,6 +16,4 @@ module.exports = Module.extend
 	oninit: -> @_super()
 
 	onrender: ->
-		path = @find("path")
-		length = path.getTotalLength()
-		TweenMax.to(path, 2, { delay: 1, 'stroke-dashoffset': length, ease:Bounce.easeOut })
+		

@@ -1,18 +1,18 @@
 Invite:
-    ☐ SVG flags and colours
     ☐ flag animation (wind blowing) -> skew/scale http://codepen.io/GriffinArtworks/pen/wkrIK
 
     ☐ refine farm scene | mobile -> fire scale_in
     ☐ reflect scene changes day/night
     ☐ scene intro-outro: fly - ?
 
+    ☐ rsvp content/message box/style -> postcard
     ☐ greeting content/style
     ☐ slide styles + floral assets
-    ☐ rsvp content/message box/style
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
 
+    ✔ SVG flags and colours @done(2015-04-01 12:57) @project(Invite)
     ✔ loader @done(2015-03-31 17:31) @project(Invite)
     ✔ remove nav module @done(2015-03-31 16:08) @project(Invite)
     ✔ change day to morning | digest to day @done(2015-03-31 16:06) @project(Invite)

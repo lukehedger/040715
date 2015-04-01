@@ -70,16 +70,14 @@
 
 // flags
 .flag
-	size: 0
-	border-style: solid
-	border-width: 50px 25px 0 25px
-	border-color: $color.blue transparent transparent transparent
-	position: absolute
+	&:nth-child(2n+1)
+		fill: white
 
-	&:first-of-type
-		top: 5px
-		left: 0
-		transform: rotate(10deg)
+	&:nth-child(2n+2)
+		fill: $color.red
+
+	&:nth-child(3n+4)
+		fill: $color.skyblue
 
 // field
 .field
