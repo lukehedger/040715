@@ -1,15 +1,17 @@
 Invite:
-    ☐ refine farm scene | mobile -> fire scale_in
-    ☐ reflect scene changes day/night
-
-    ☐ rsvp content/message box/style -> postcard
-    ☐ scene intro-outro: fly - ?
+    ☐ rsvp postcard
+    ☐ section pointers on stage controls (eg. scroll down, or rsvp)
     ☐ greeting content/style
-    ☐ slide styles + floral assets
+
+    ☐ slide styles + floral assets -> whats the content look like?
+    ☐ scene intro-outro: fly - ?
+    ☐ svg rocket
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
 
+    ✔ reflect scene changes day/night -> inc move sun down @done(2015-04-01 16:18) @project(Invite)
+    ✔ refine farm scene | mobile -> fire scale_in @done(2015-04-01 16:03) @project(Invite)
     ✔ flag animation (wind blowing) -> skew/scale http://codepen.io/GriffinArtworks/pen/wkrIK @done(2015-04-01 13:07) @project(Invite)
     ✔ SVG flags and colours @done(2015-04-01 12:57) @project(Invite)
     ✔ loader @done(2015-03-31 17:31) @project(Invite)

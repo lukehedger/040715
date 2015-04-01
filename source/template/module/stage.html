@@ -8,9 +8,8 @@
 <div class="stage">
 	{{>stageControls}}
 
-	{{>sun}}
-
 	{{#view == 'morning'}}
+	{{>sun}}
 	<ui-scene-morning guest="{{guest}}" />
 	{{/}}
 	{{#view == 'day'}}

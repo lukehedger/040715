@@ -13,6 +13,12 @@ module.exports = Module.extend
 
 	template: require "module/scene-night.html"
 
+	data:
+		message: ""
+
 	oninit: -> @_super()
 
 	onrender: ->
+		# TODO - 3way binding with firebase? or "SEND" button
+		@observe "message", (newValue) ->
+			console.log newValue

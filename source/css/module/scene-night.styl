@@ -6,4 +6,43 @@
  */
 
 .scene-night
-	// 
+	z-index: 30
+
+.postcard
+	align(both)
+	// size: 100%
+	size: 80%
+	background-color: white
+
+	+above($media.medium)
+		// size: 100%
+		size: 75%
+
+.postcard__inner
+	align(both)
+	size: 100%
+
+.postcard__section
+	span(1/2)
+	height: 100%
+	padding: 20px
+	font-size: 20px
+
+	+above($media.medium)
+		padding: 100px
+
+.postcard__section--message
+	@extend .postcard__section
+	border-right: 1px solid black
+
+.postcard__section--address
+	@extend .postcard__section
+
+.message
+	size: 100% 90%
+	// border: 1px dashed black
+	border: 0
+	outline: 0
+	resize: none
+	font-family: $font.primary
+	font-size: 20px

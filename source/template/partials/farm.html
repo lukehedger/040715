@@ -63,9 +63,12 @@
         <div class="tree"></div>
         <div class="tree--dark"></div>
         <div class="tree"></div>
+        <div class="tree--green"></div>
+        <div class="tree--dark"></div>
+        <div class="tree"></div>
     </div>
     <div class="tents">
-        <div class="tent">
+        <div class="tent--pink">
             <div class="canvas">
                 <div class="awning"></div>
                 <div class="flaps"></div>
@@ -77,14 +80,16 @@
                 <div class="flaps"></div>
             </div>
         </div>
-        <div class="tent--pink">
+        <div class="tent">
             <div class="canvas">
                 <div class="awning"></div>
                 <div class="flaps"></div>
             </div>
         </div>
     </div>
+    {{#view == 'night'}}
     <div class="fire">
         <div class="logs"></div>
     </div>
+    {{/}}
 </div>
