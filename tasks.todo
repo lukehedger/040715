@@ -2,7 +2,6 @@ Invite:
     ☐ data
     ☐ greeting content/style
     ☐ slide styles + floral assets -> whats the content look like?
-    ☐ analytics
     ☐ mailchimp
 
     ☐ svg rocket -> https://dribbble.com/shots/1940901-S-P-A-C-E-WIP
@@ -11,6 +10,7 @@ Invite:
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
 
+    ✔ analytics @done(2015-04-02 11:58) @project(Invite)
     ✔ section pointers on stage controls (eg. scroll down, or rsvp) @done(2015-04-02 11:53) @project(Invite)
     ✔ rsvp postcard @done(2015-04-02 11:38) @project(Invite)
     ✔ scene intro-outro: fly @done(2015-04-02 09:50) @project(Invite)
