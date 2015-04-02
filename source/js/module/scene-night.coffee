@@ -8,17 +8,19 @@
 
 Module = require "./abstract-scene"
 
+AddClass = require "../util/addClass"
 
 module.exports = Module.extend
 
 	template: require "module/scene-night.html"
 
-	data:
-		message: ""
-
 	oninit: -> @_super()
 
 	onrender: ->
-		# TODO - 3way binding with firebase? or "SEND" button
-		@observe "message", (newValue) ->
-			console.log newValue
+		@on "sendMessage", (e) ->
+			@fire "msgSent", @get("message")
+
+			# disable
+			@off "sendMessage"
+			document.getElementById("message").disabled = true
+			AddClass e.node, "disabled"

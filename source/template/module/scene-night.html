@@ -9,14 +9,20 @@
 
 	<div class="postcard" intro="fade">
 		<div class="postcard__inner">
+			<div class="postcard__stamp"></div>
 			<div class="postcard__section--message">
 				<textarea class="message" name="message" id="message" cols="30" rows="10" value="{{message}}" placeholder="RSVP here..."></textarea>
-				<div class="from">From {{guest.name}}</div>
-				<!-- <div class="send">SEND</div> -->
+				<div class="postcard__from">from {{guest.name}}</div>
+				<div class="postcard__send">
+					<a on-tap="sendMessage">Send</a>
+				</div>
 			</div>
 			<div class="postcard__section--address">
-				London<br>
-				London
+				<div class="postcard__address">
+					King Luke<br>
+					London
+				</div>
+				<div class="postcard__description">Hawthbush Farm, Gun Hill - circa 2015</div>
 			</div>
 		</div>
 	</div>

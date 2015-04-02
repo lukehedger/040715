@@ -13,7 +13,7 @@
 	<ui-scene-morning guest="{{guest}}" />
 	{{/}}
 	{{#view == 'night'}}
-	<ui-scene-night guest="{{guest}}" />
+	<ui-scene-night code={{code}} guest="{{guest}}" message="{{message}}" />
 	{{/}}
 	{{#view == 'day'}}
 	<ui-scene-day guest="{{guest}}" slides="{{content.slides}}" />

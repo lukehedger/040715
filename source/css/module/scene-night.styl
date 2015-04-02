@@ -11,16 +11,21 @@
 .postcard
 	align(both)
 	// size: 100%
-	size: 80%
+	size: 100% 75%
 	background-color: white
 
 	+above($media.medium)
 		// size: 100%
-		size: 75%
+		size: 60%
 
 .postcard__inner
 	align(both)
 	size: 100%
+
+.postcard__stamp
+	size: 75px
+	background-color: $color.red
+	absolute: top 20px right 20px
 
 .postcard__section
 	span(1/2)
@@ -29,7 +34,7 @@
 	font-size: 20px
 
 	+above($media.medium)
-		padding: 100px
+		padding: 50px
 
 .postcard__section--message
 	@extend .postcard__section
@@ -37,12 +42,54 @@
 
 .postcard__section--address
 	@extend .postcard__section
+	position: relative
+
+.postcard__address
+	align(both)
 
 .message
-	size: 100% 90%
+	size: 100% 75%
 	// border: 1px dashed black
 	border: 0
 	outline: 0
 	resize: none
 	font-family: $font.primary
 	font-size: 20px
+
+.postcard__from
+	stack()
+
+.postcard__send
+	stack()
+	position: relative
+
+	a
+		width: 100%
+		display: block
+		border-radius: 4px
+		font-family: $font.secondary
+		font-weight: bold
+		text-align: center
+		text-transform: uppercase
+		background-color: $color.green
+		color: white
+		cursor: pointer
+		transition: 0.2s
+
+		&:hover, &:focus
+			background-color: lighten($color.green, 5)
+
+		&.disabled
+			background-color: grey
+			cursor: default
+
+		+above($media.large)
+			max-width: 80px
+			absolute: right 0
+
+.postcard__description
+	absolute: bottom 20px right 20px
+	font-size: 10px
+
+	+above($media.medium)
+		bottom: 50px
