@@ -3,13 +3,15 @@ Invite:
     ☐ section pointers on stage controls (eg. scroll down, or rsvp)
     ☐ greeting content/style
 
+    ☐ data
     ☐ slide styles + floral assets -> whats the content look like?
-    ☐ scene intro-outro: fly - ?
-    ☐ svg rocket
+    ☐ svg rocket -> https://dribbble.com/shots/1940901-S-P-A-C-E-WIP
+    ☐ lights
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
 
+    ✔ scene intro-outro: fly @done(2015-04-02 09:50) @project(Invite)
     ✔ reflect scene changes day/night -> inc move sun down @done(2015-04-01 16:18) @project(Invite)
     ✔ refine farm scene | mobile -> fire scale_in @done(2015-04-01 16:03) @project(Invite)
     ✔ flag animation (wind blowing) -> skew/scale http://codepen.io/GriffinArtworks/pen/wkrIK @done(2015-04-01 13:07) @project(Invite)
