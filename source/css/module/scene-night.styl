@@ -12,9 +12,12 @@
 	align(both)
 	size: 100% 75%
 	background-color: white
+	box-shadow: 0px 0px 10px #777
 
 	+above($media.large)
 		size: 60%
+		align(horizontal)
+		top: 15%
 
 .postcard__inner
 	align(both)
@@ -25,6 +28,72 @@
 	size: 75px
 	background-color: $color.red
 	absolute: top 20px right 20px
+	color: white
+
+.stamp__letter
+	align(vertical)
+	font-size: 16px
+
+.stamp__letter--a
+	@extend .stamp__letter
+	left: 15px
+
+.stamp__letter--l
+	@extend .stamp__letter
+	right: 15px
+
+.stamp__number
+	align(horizontal)
+	font-size: 10px
+
+.stamp__number--20
+	@extend .stamp__number
+	top: 10px
+
+.stamp__number--15
+	@extend .stamp__number
+	bottom: 10px
+
+.stamp__line
+	size: 1px 100%
+	absolute: top 0 left 50%
+	transform: rotate(45deg)
+	background-color: white
+
+	&:before
+		content: ""
+		display: block
+		size: 0
+		border-style: solid
+		border-width: 0 3px 6.7px 3px
+		border-color: transparent transparent white transparent
+		relative: top -6px left -2px
+
+	&:after
+		content: ""
+		display: block
+		size: 0
+		border-style: solid
+		border-width: 0 3px 6.7px 3px
+		border-color: transparent transparent white transparent
+		relative: bottom -69px right 4px
+		transform: rotate(180deg)
+
+.stamp__line--flipped
+	@extend .stamp__line
+	transform: rotate(-45deg)
+
+	&:before
+		size: 5px 1px
+		border: 0
+		background-color: white
+		relative: top 0px left -2px
+
+	&:after
+		size: 5px 1px
+		border: 0
+		background-color: white
+		relative: bottom -73px right 4px
 
 .postcard__section
 	span(1/2)

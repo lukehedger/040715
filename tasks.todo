@@ -1,10 +1,9 @@
 Invite:
-    ☐ guestlist review
     ☐ greeting content/style
     ☐ refine slide content
 
 Live:
-    ☐ mailchimp
+    ☐ mailchimp - data and email
     ☐ test analytics
 
 Other:
@@ -14,6 +13,7 @@ Other:
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
 
+    ✔ guestlist review @done(2015-04-04 17:35) @project(Invite)
     ✘ svg rocket -> https://dribbble.com/shots/1940901-S-P-A-C-E-WIP @cancelled(2015-04-04 17:23)
     ✘ lights @cancelled(2015-04-04 17:23)
     ✔ slide styles @done(2015-04-04 15:11) @project(Invite)

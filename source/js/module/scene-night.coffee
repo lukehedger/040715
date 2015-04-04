@@ -24,3 +24,7 @@ module.exports = Module.extend
 			@off "sendMessage"
 			document.getElementById("message").disabled = true
 			AddClass e.node, "disabled"
+
+			# sent!
+			link = @find(".postcard__send a")
+			link.innerHTML = "Sent"

@@ -36,10 +36,10 @@
 		"name": "Shiela & Peter"
 	},
 	"durants": {
-		"name": "Therese, Paul, Harry & Jack"
+		"name": "Therese, Paul, Harry, Jack & Charlie"
 	},
 	"pinos": {
-		"name": "Avril, Brad & baby"
+		"name": "Avril, Brad & Lily"
 	},
 	"mande": {
 		"name": "Matthew & Emily"
@@ -50,14 +50,8 @@
 	"brooks": {
 		"name": "Chris, Sarah, Hannah & Thomas"
 	},
-	"michael": {
-		"name": "Michael"
-	},
 	"clarks": {
 		"name": "Mary-Anne & Ed"
-	},
-	"jandj": {
-		"name": "Joanna, Jaakko, Lucas & Aida"
 	},
 	"clarks1": {
 		"name": "Tom & Kate"
@@ -67,9 +61,6 @@
 	},
 	"glovers": {
 		"name": "Louise, Brian, Joe, Ben & Will"
-	},
-	"gandp": {
-		"name": "Granny & Papa"
 	},
 	"aandm": {
 		"name": "Adrian & Maria"
@@ -98,8 +89,8 @@
 	"canda": {
 		"name": "Allister, Catherine, Dan, Ben and Amy"
 	},
-	"vandm": {
-		"name": "Vivien & Mike"
+	"vivs": {
+		"name": "Vivs"
 	},
 	"aanda": {
 		"name": "Ant & Aggie"
@@ -137,8 +128,8 @@
 	"lily": {
 		"name": "Lily"
 	},
-	"jenny": {
-		"name": "Jenny"
+	"jandt": {
+		"name": "Jenny & Tim"
 	},
 	"sarahc": {
 		"name": "Sarah"
@@ -155,12 +146,6 @@
 	"candm": {
 		"name": "Charlotte & Martin"
 	},
-	"celina": {
-		"name": "Celina"
-	},
-	"sandj": {
-		"name": "Stefanie & Julian"
-	},
 	"fandk": {
 		"name": "Fergus & Kate"
 	},
@@ -169,5 +154,8 @@
 	},
 	"dandn": {
 		"name": "Diane & Norrie"
+	},
+	"elizabeth": {
+		"name": "Elizabeth"
 	}
 }
