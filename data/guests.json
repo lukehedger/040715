@@ -1,228 +1,173 @@
 {
-	"guests": [
-		{
-			"name": "Luke",
-			"code": "groom"
-		},
-		{
-			"name": "Alice",
-			"code": "bride"
-		},
-		{
-			"name": "Jane & Peter",
-			"code": "jandp"
-		},
-		{
-			"name": "Catherine & Steve",
-			"code": "cands"
-		},
-		{
-			"name": "Phil",
-			"code": "bestman"
-		},
-		{
-			"name": "Gabby & Adrian",
-			"code": "ganda"
-		},
-		{
-			"name": "Greg",
-			"code": "greg"
-		},
-		{
-			"name": "Sam, Katie, Finley & Darcy",
-			"code": "brightonelfers"
-		},
-		{
-			"name": "Izzy",
-			"code": "maidofhonour"
-		},
-		{
-			"name": "Emily, Rob, Jennifer, James & Benjamin",
-			"code": "hamiltons"
-		},
-		{
-			"name": "Shiela & Peter",
-			"code": "ohsheila"
-		},
-		{
-			"name": "Therese, Paul, Harry & Jack",
-			"code": "durants"
-		},
-		{
-			"name": "Avril, Brad & baby",
-			"code": "pinos"
-		},
-		{
-			"name": "Matthew & Emily",
-			"code": "mande"
-		},
-		{
-			"name": "Ray & Maxine",
-			"code": "randm"
-		},
-		{
-			"name": "Chris, Sarah, Hannah & Thomas",
-			"code": "brooks"
-		},
-		{
-			"name": "Michael",
-			"code": "michael"
-		},
-		{
-			"name": "Mary-Anne & Ed",
-			"code": "clarks"
-		},
-		{
-			"name": "Joanna, Jaakko, Lucas & Aida",
-			"code": "jandj"
-		},
-		{
-			"name": "Tom & Kate",
-			"code": "clarks1"
-		},
-		{
-			"name": "Teresa & Ken",
-			"code": "tandk"
-		},
-		{
-			"name": "Louise, Brian, Joe, Ben & Will",
-			"code": "glovers"
-		},
-		{
-			"name": "Granny & Papa",
-			"code": "gandp"
-		},
-		{
-			"name": "Adrian & Maria",
-			"code": "aandm"
-		},
-		{
-			"name": "Joan & Rod",
-			"code": "jandr"
-		},
-		{
-			"name": "Andrew, Chrissy, Emma & Alex",
-			"code": "aandc"
-		},
-		{
-			"name": "Richard, Jade, Cameron & Freddie",
-			"code": "randj"
-		},
-		{
-			"name": "Jeremy & Donna",
-			"code": "jandd"
-		},
-		{
-			"name": "Paul, Maeve, Ben & Bibi Roisin",
-			"code": "pandm"
-		},
-		{
-			"name": "Fran & Ian",
-			"code": "tuletts"
-		},
-		{
-			"name": "Ele, Tim, Anna, Alex & Matthew",
-			"code": "woodwards"
-		},
-		{
-			"name": "Allister, Catherine, Dan, Ben and Amy",
-			"code": "canda"
-		},
-		{
-			"name": "Vivien & Mike",
-			"code": "vandm"
-		},
-		{
-			"name": "Ant & Aggie",
-			"code": "aanda"
-		},
-		{
-			"name": "James & Kate",
-			"code": "jandk"
-		},
-		{
-			"name": "Helen & Orlando",
-			"code": "hando"
-		},
-		{
-			"name": "Jonny & Caroline",
-			"code": "jandc"
-		},
-		{
-			"name": "Katy & Liam",
-			"code": "kandl"
-		},
-		{
-			"name": "Sarah",
-			"code": "sarah"
-		},
-		{
-			"name": "Andrew",
-			"code": "andrew"
-		},
-		{
-			"name": "Oli & Lorcan",
-			"code": "oandl"
-		},
-		{
-			"name": "Dominic",
-			"code": "dominic"
-		},
-		{
-			"name": "Naureen & Nick",
-			"code": "nandn"
-		},
-		{
-			"name": "Rosie & Tom",
-			"code": "randt"
-		},
-		{
-			"name": "Lily",
-			"code": "lily"
-		},
-		{
-			"name": "Jenny",
-			"code": "jenny"
-		},
-		{
-			"name": "Sarah",
-			"code": "sarahc"
-		},
-		{
-			"name": "Sophie",
-			"code": "sophie"
-		},
-		{
-			"name": "Mark",
-			"code": "mark"
-		},
-		{
-			"name": "Fran",
-			"code": "fran"
-		},
-		{
-			"name": "Charlotte & Martin",
-			"code": "candm"
-		},
-		{
-			"name": "Celina",
-			"code": "celina"
-		},
-		{
-			"name": "Stefanie & Julian",
-			"code": "sandj"
-		},
-		{
-			"name": "Fergus & Kate",
-			"code": "fandk"
-		},
-		{
-			"name": "Gill & Gary",
-			"code": "gandg"
-		},
-		{
-			"name": "Diane & Norrie",
-			"code": "dandn"
-		}
-	]
+	"aandl": {
+		"name": "Alice & Luke"
+	},
+	"groom": {
+		"name": "Luke"
+	},
+	"bride": {
+		"name": "Alice"
+	},
+	"jandp": {
+		"name": "Jane & Peter"
+	},
+	"cands": {
+		"name": "Catherine & Steve"
+	},
+	"bestman": {
+		"name": "Phil"
+	},
+	"ganda": {
+		"name": "Gabby & Adrian"
+	},
+	"greg": {
+		"name": "Greg"
+	},
+	"brightonelfers": {
+		"name": "Sam, Katie, Finley & Darcy"
+	},
+	"maidofhonour": {
+		"name": "Izzy"
+	},
+	"hamiltons": {
+		"name": "Emily, Rob, Jennifer, James & Benjamin"
+	},
+	"ohsheila": {
+		"name": "Shiela & Peter"
+	},
+	"durants": {
+		"name": "Therese, Paul, Harry & Jack"
+	},
+	"pinos": {
+		"name": "Avril, Brad & baby"
+	},
+	"mande": {
+		"name": "Matthew & Emily"
+	},
+	"randm": {
+		"name": "Ray & Maxine"
+	},
+	"brooks": {
+		"name": "Chris, Sarah, Hannah & Thomas"
+	},
+	"michael": {
+		"name": "Michael"
+	},
+	"clarks": {
+		"name": "Mary-Anne & Ed"
+	},
+	"jandj": {
+		"name": "Joanna, Jaakko, Lucas & Aida"
+	},
+	"clarks1": {
+		"name": "Tom & Kate"
+	},
+	"tandk": {
+		"name": "Teresa & Ken"
+	},
+	"glovers": {
+		"name": "Louise, Brian, Joe, Ben & Will"
+	},
+	"gandp": {
+		"name": "Granny & Papa"
+	},
+	"aandm": {
+		"name": "Adrian & Maria"
+	},
+	"jandr": {
+		"name": "Joan & Rod"
+	},
+	"aandc": {
+		"name": "Andrew, Chrissy, Emma & Alex"
+	},
+	"randj": {
+		"name": "Richard, Jade, Cameron & Freddie"
+	},
+	"jandd": {
+		"name": "Jeremy & Donna"
+	},
+	"pandm": {
+		"name": "Paul, Maeve, Ben & Bibi Roisin"
+	},
+	"tuletts": {
+		"name": "Fran & Ian"
+	},
+	"woodwards": {
+		"name": "Ele, Tim, Anna, Alex & Matthew"
+	},
+	"canda": {
+		"name": "Allister, Catherine, Dan, Ben and Amy"
+	},
+	"vandm": {
+		"name": "Vivien & Mike"
+	},
+	"aanda": {
+		"name": "Ant & Aggie"
+	},
+	"jandk": {
+		"name": "James & Kate"
+	},
+	"hando": {
+		"name": "Helen & Orlando"
+	},
+	"jandc": {
+		"name": "Jonny & Caroline"
+	},
+	"kandl": {
+		"name": "Katy & Liam"
+	},
+	"sarah": {
+		"name": "Sarah"
+	},
+	"andrew": {
+		"name": "Andrew"
+	},
+	"oandl": {
+		"name": "Oli & Lorcan"
+	},
+	"dominic": {
+		"name": "Dominic"
+	},
+	"nandn": {
+		"name": "Naureen & Nick"
+	},
+	"randt": {
+		"name": "Rosie & Tom"
+	},
+	"lily": {
+		"name": "Lily"
+	},
+	"jenny": {
+		"name": "Jenny"
+	},
+	"sarahc": {
+		"name": "Sarah"
+	},
+	"sophie": {
+		"name": "Sophie"
+	},
+	"mark": {
+		"name": "Mark"
+	},
+	"fran": {
+		"name": "Fran"
+	},
+	"candm": {
+		"name": "Charlotte & Martin"
+	},
+	"celina": {
+		"name": "Celina"
+	},
+	"sandj": {
+		"name": "Stefanie & Julian"
+	},
+	"fandk": {
+		"name": "Fergus & Kate"
+	},
+	"gandg": {
+		"name": "Gill & Gary"
+	},
+	"dandn": {
+		"name": "Diane & Norrie"
+	}
 }

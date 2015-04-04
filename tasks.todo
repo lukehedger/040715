@@ -1,19 +1,23 @@
 Invite:
-    ☐ data
+    ☐ guestlist review
     ☐ greeting content/style
-    ☐ slide styles + floral assets -> whats the content look like?
+    ☐ refine slide content
+
+Live:
     ☐ mailchimp
     ☐ test analytics
 
-    ☐ svg rocket -> https://dribbble.com/shots/1940901-S-P-A-C-E-WIP
-    ☐ lights
-
+Other:
     ☐ refine US list
     ☐ how could the weekend work? features?
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
 
+    ✘ svg rocket -> https://dribbble.com/shots/1940901-S-P-A-C-E-WIP @cancelled(2015-04-04 17:23)
+    ✘ lights @cancelled(2015-04-04 17:23)
+    ✔ slide styles @done(2015-04-04 15:11) @project(Invite)
+    ✔ data @done(2015-04-04 15:11) @project(Invite)
     ✔ analytics @done(2015-04-02 11:58) @project(Invite)
     ✔ section pointers on stage controls (eg. scroll down, or rsvp) @done(2015-04-02 11:53) @project(Invite)
     ✔ rsvp postcard @done(2015-04-02 11:38) @project(Invite)

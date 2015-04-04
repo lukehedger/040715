@@ -12,12 +12,51 @@
 		{{#slides:slide}}
 			{{#active}}
 			<div class="slide--{{slide}}" intro-outro="fly:{ x:'{{x}}', y:'0%', opacity:1 }">
-				<h1>{{title}}</h1>
-				<p>{{body}}</p>
-				{{#links}}
-				{{.}}
-				{{/}}
-				<div class="flower"></div>
+				<h3 class="slide__title">{{title}}</h3>
+
+				<div class="slide__body">
+					{{#slide == 1}}
+					<p>We shall be getting married at <span class="underlined">11am</span> at:</p>
+					<p class="slide__address">
+						Otham Court<br>
+						Otham Court Lane<br>
+						Polegate<br>
+						East Sussex<br>
+						BN26 6QS<br>
+					</p>
+					<p>The chapel is very small so there is limited seating space. The ceremony will be short but please let us know if you'll need and we'll save one especially.</p>
+					<p>We've also been asked to let those of you with little ones - or those prone to falling in lakes - know that there are two open ponds so please be careful.</p>
+					<p>There is plenty of parking available on-site!</p>
+					{{/}}
+
+					{{#slide == 2}}
+					<p>Following the ceremony we shall be celebrating at:</p>
+					<p class="slide__address">
+						Hawthbush Farm<br>
+						Gun Hill<br>
+						Heathfield<br>
+						East Sussex<br>
+						TN21 0JY<br>
+						(TN21 0JX for SatNav)
+					</p>
+					<p>
+						Again plenty of parking!
+					</p>
+					{{/}}
+
+					{{#slide == 3}}
+					<p>If you'd like to buy us a gift we've got a <a class="slide__link" href="">wedding list on Amazon</a> :)</p>
+					<p>Here are a few nice hotels if you need accomodation over the weekend:</p>
+					<ul class="slide__list">
+						<li><a href="http://www.skyhousesussex.com/" class="slide__link">Skyhouse</a></li>
+						<li><a href="http://www.maygarlandinn.co.uk/" class="slide__link">May Garland Inn</a> (close to reception)</li>
+						<li><a href="http://www.powdermillshotel.com/" class="slide__link">Powder Mills Hotel</a></li>
+						<li><a href="http://thelimes-bandb.co.uk/" class="slide__link">The Limes (close to ceremony)</a></li>
+					</ul>
+					<p>&#9835; Let us know what tunes you'd like to hear at the reception in the RSVP</p>
+					{{/}}
+				</div>
+				<!-- <div class="flower"></div> -->
 			</div>
 			{{/}}
 		{{/}}

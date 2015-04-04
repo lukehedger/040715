@@ -35,12 +35,15 @@
 	border-radius: 90px 0px 0px 90px
 
 .slide
-	align(both)
+	align(horizontal)
 	size: 100%
+	padding: 20px
 	background: white
+	overflow: scroll
 
 	+above($media.medium)
-		size: 75%
+		size: 60%
+		top: 15%
 
 .slide--1
 	@extend .slide
@@ -58,3 +61,44 @@
 	size: 170px 120px
 	background: url("../img/floral.png") no-repeat -800px -227px
 	absolute: bottom 0 left 0
+
+.slide__title
+	width: 100%
+	margin: 20px auto
+	padding-bottom: 5px
+	border-bottom: 1px dashed black
+	font-size: 30px
+	text-align: center
+
+	+above($media.medium)
+		max-width: 150px
+
+.slide__body
+	padding: 0 50px
+	font-size: 16px
+	line-height: 18px
+
+	+above($media.medium)
+		padding: 0 20px
+
+.slide__body p
+	margin: 20px auto
+
+	+above($media.medium)
+		margin: 10px auto
+
+.slide__address
+	width: 100%
+	font-size: 18px
+	line-height: 20px
+	margin: 0 auto
+
+	+above($media.medium)
+		width: 175px
+
+.slide__link
+	color: white
+
+.slide__list
+	margin-left: 20px
+	list-style-type: square

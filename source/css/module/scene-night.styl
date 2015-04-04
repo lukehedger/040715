@@ -10,17 +10,16 @@
 
 .postcard
 	align(both)
-	// size: 100%
 	size: 100% 75%
 	background-color: white
 
-	+above($media.medium)
-		// size: 100%
+	+above($media.large)
 		size: 60%
 
 .postcard__inner
 	align(both)
 	size: 100%
+	padding: 40px 0
 
 .postcard__stamp
 	size: 75px
@@ -33,8 +32,8 @@
 	padding: 20px
 	font-size: 20px
 
-	+above($media.medium)
-		padding: 50px
+	+above($media.large)
+		padding: 0 50px
 
 .postcard__section--message
 	@extend .postcard__section
@@ -48,7 +47,7 @@
 	align(both)
 
 .message
-	size: 100% 75%
+	size: 100% 60%
 	// border: 1px dashed black
 	border: 0
 	outline: 0
@@ -91,5 +90,5 @@
 	absolute: bottom 20px right 20px
 	font-size: 10px
 
-	+above($media.medium)
-		bottom: 50px
+	+above($media.large)
+		bottom: 0
