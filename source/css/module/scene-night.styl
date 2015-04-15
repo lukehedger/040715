@@ -114,6 +114,7 @@
 
 .postcard__address
 	align(both)
+	min-width: 100px
 
 .message
 	size: 100% 60%
@@ -156,8 +157,10 @@
 			absolute: right 0
 
 .postcard__description
+	max-width: 110px
 	absolute: bottom 20px right 20px
 	font-size: 10px
 
 	+above($media.large)
+		max-width: 100%
 		bottom: 0
