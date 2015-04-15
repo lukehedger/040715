@@ -1,6 +1,5 @@
 Invite:
     ☐ refine slide content/style - white/flowers
-    ☐ greeting content/style
 
 Live:
     ☐ mailchimp - data and email
@@ -9,6 +8,7 @@ Live:
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
 
+    ✔ greeting content/style @done(2015-04-15 18:32) @project(Invite)
     ✔ slight mobile tweaks @done(2015-04-15 17:41) @project(Invite)
     ✔ guestlist review @done(2015-04-04 17:35) @project(Invite)
     ✘ svg rocket -> https://dribbble.com/shots/1940901-S-P-A-C-E-WIP @cancelled(2015-04-04 17:23)

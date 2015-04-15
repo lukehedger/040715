@@ -16,4 +16,3 @@ module.exports = Module.extend
 	oninit: -> @_super()
 
 	onrender: ->
-		
