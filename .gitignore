@@ -18,3 +18,5 @@ node_modules/
 .divshot*
 
 # tasks.todo
+
+tests/*.png

@@ -29,6 +29,15 @@
 + Push to Divshot manually: `divshot push <env>`
 + Promote to environment: `divshot promote <from_env> <to_env>`
 
+## Tests
+
+Capture screenshots for all users using [PhantomJS](http://phantomjs.org/) - `brew install phantomjs`
+
+```
+cd tests
+phantomjs capture.js
+```
+
 ## Status
 
 [![Build Status](http://img.shields.io/travis/lukehedger/040715/master.svg?style=flat)](https://travis-ci.org/lukehedger/040715)
