@@ -56,12 +56,15 @@ var users = [
 
 function follow(user, callback) {
     var page = require('webpage').create();
+    page.onConsoleMessage = function(msg, lineNum, sourceId) {
+        console.log('CONSOLE: ' + msg + ' (from line #' + lineNum + ' in "' + sourceId + '")');
+    };
     page.open('http://development.aliceluke.divshot.io/' + user, function() {
         window.setTimeout(function(){
             page.render('phantom_' + user + '.png');
             page.close();
             callback.apply();
-        }, 2000)
+        }, 3000)
     });
 }
 
