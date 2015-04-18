@@ -1,6 +1,3 @@
-Invite:
-    ☐ refine slide content/style - white/flowers
-
 Live:
     ☐ mailchimp - data and email
     ☐ test analytics
@@ -8,6 +5,7 @@ Live:
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
 
+    ✔ refine slide content/style - flowers @done(2015-04-18 20:31) @project(Invite)
     ✔ greeting content/style @done(2015-04-15 18:32) @project(Invite)
     ✔ slight mobile tweaks @done(2015-04-15 17:41) @project(Invite)
     ✔ guestlist review @done(2015-04-04 17:35) @project(Invite)

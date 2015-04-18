@@ -36,8 +36,8 @@
 
 .slide
 	align(both)
-	size: 90% 75%
-	padding: 20px
+	size: 100% 75%
+	padding: 30px
 	background: white
 	overflow: scroll
 	box-shadow: 0px 0px 10px #777
@@ -47,36 +47,102 @@
 		size: 60%
 		top: 15%
 
+	+above($media.large)
+		overflow: hidden
+
 .slide--1
 	@extend .slide
-	background-color: white
+	background-color: lighten($color.pink, 27)
 
 .slide--2
 	@extend .slide
-	background-color: white
+	background-color: lighten($color.blue, 47)
+
+	.slide__feature
+		background: $color.turq
 
 .slide--3
 	@extend .slide
-	background-color: white
+	background-color: lighten($color.yellow, 42)
+
+	.slide__feature
+		background: $color.yellow
+
+	.feature__inner
+		font-size: 30px
+
+		+above($media.large)
+			font-size: 60px
+
+	.flower
+		+below($media.medium)
+			display: none
 
 .slide__title
-	width: 100%
-	margin: 20px auto
-	padding-bottom: 5px
-	border-bottom: 1px dashed black
-	font-size: 30px
-	text-align: center
+	size: 100% 10%
+	margin: 0 auto
 
 	+above($media.medium)
 		max-width: 150px
+		height: 20%
+
+.slide__feature
+	size: 50px
+	border-radius: 50%
+	background: $color.red
+	absolute: top 20px right 20px
+
+	+above($media.large)
+		size: 100px
+		top: 30px
+		right: 40px
+
+.feature__inner
+	align(both)
+	color: white
+	font-family: $font.secondary
+	font-size: 20px
+	text-align: center
+	font-variant: small-caps
+
+	+above($media.large)
+		font-size: 40px
 
 .slide__body
+	height: 90%
 	padding: 0 20px
 	font-size: 16px
 	line-height: 18px
 
 	+above($media.medium)
+		height: 80%
 		padding: 0 20px
+
+.slide__section
+	span(1/1)
+
+	+above($media.large)
+		span(1/2)
+		height: 100%
+		position: relative
+
+	&:nth-child(2n)
+		border: 0
+
+		+above($media.large)
+			border-right: 1px solid #000
+
+.section__inner
+	width: 100%
+	padding: 0
+
+	+above($media.large)
+		align(both)
+		padding: 10px 20px
+
+.section__inner--address
+	@extend .section__inner
+	text-align: center
 
 .slide__body p
 	margin: 20px auto
@@ -106,15 +172,104 @@ hr
 	border: 0
 	border-top: 1px solid #ccc
 
+.beer
+	width: 150px
+	margin: 0 auto
+
+	+below($media.large)
+		display: none
+
+.beer__clip
+	size: 55px
+	margin: 5px
+	background: no-repeat center
+	background-size: cover
+	display: inline-block
+
+.beer__clip--ctb
+	@extend .beer__clip
+	background-image: url("../img/beer_ctb.png")
+
+.beer__clip--gun
+	@extend .beer__clip
+	background-image: url("../img/beer_gun.png")
+
 // flowers
 .flower
 	position: absolute
 	background: no-repeat center
 	background-size: cover
 
+.flower--2
+	@extend .flower
+	size: 60px 62px
+	bottom: -5px
+	right: 30px
+	background-image: url("../img/flowers/flower_2.png")
+	transform: rotate(-20deg)
+	z-index: 20
+
+	+above($media.medium)
+		right: 50px
+
+.flower--5
+	@extend .flower
+	size: 60px 98px
+	bottom: 0
+	right: 30px
+	background-image: url("../img/flowers/flower_5.png")
+	transform: rotate(-45deg)
+	z-index: 20
+
+	+above($media.medium)
+		right: 50px
+
+.flower--9
+	@extend .flower
+	size: 46px 80px
+	bottom: 0
+	right: 10px
+	background-image: url("../img/flowers/flower_9.png")
+	transform: rotate(15deg)
+	z-index: 20
+
+	+above($media.medium)
+		right: 30px
+
+.flower--11
+	@extend .flower
+	size: 66px 74px
+	bottom: 0
+	right: 40px
+	background-image: url("../img/flowers/flower_11.png")
+	transform: rotate(-10deg)
+	z-index: 20
+	display: none
+
+	+above($media.large)
+		right: 60px
+		display: block
+
+.flower--12
+	@extend .flower
+	size: 85px 60px
+	bottom: 0
+	right: 10px
+	background-image: url("../img/flowers/flower_12.png")
+	z-index: 10
+	display: none
+
+	+above($media.large)
+		right: 30px
+		display: block
+
 .flower--13
 	@extend .flower
 	size: 57px 85px
 	bottom: 0
 	right: 0
-	background-image: url("../img/flower_13_flip.png")
+	background-image: url("../img/flowers/flower_13_flip.png")
+	z-index: 10
+
+	+above($media.medium)
+		right: 20px
