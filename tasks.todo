@@ -1,6 +1,4 @@
 Live:
-    ☐ merge to master
-    ☐ push to live
     ☐ run tests
     ☐ test analytics on live
     ☐ send email
@@ -8,6 +6,8 @@ Live:
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
 
+    ✔ merge to master @done(2015-04-19 13:35) @project(Live)
+    ✔ push to live @done(2015-04-19 13:36) @project(Live)
     ✘ flowers by trees @cancelled(2015-04-19 13:33) @project(Invite)
     ✔ replace amazon wish list with http://www.whatidlove.co.uk/findalist.aspx (272924) and date @done(2015-04-19 12:54) @project(Invite)
     ✔ mailchimp - data and email @done(2015-04-19 12:45) @project(Live)
