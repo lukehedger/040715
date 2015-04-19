@@ -1,4 +1,8 @@
+Invite:
+    ☐ flowers by trees
+
 Live:
+    ☐ merge to master
     ☐ push to live
     ☐ run tests
     ☐ test analytics on live
@@ -7,6 +11,7 @@ Live:
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
 
+    ✔ replace amazon wish list with http://www.whatidlove.co.uk/findalist.aspx (272924) and date @done(2015-04-19 12:54) @project(Invite)
     ✔ mailchimp - data and email @done(2015-04-19 12:45) @project(Live)
     ✔ refine slide content/style - flowers @done(2015-04-18 20:31) @project(Invite)
     ✔ greeting content/style @done(2015-04-15 18:32) @project(Invite)
