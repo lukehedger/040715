@@ -49,7 +49,7 @@ var users = [
 	"fran",
 	"candm",
 	"fandk",
-	"gandg",
+	"jandg",
 	"dandn",
 	"elizabeth"
 ]
@@ -59,7 +59,7 @@ function follow(user, callback) {
     page.onConsoleMessage = function(msg, lineNum, sourceId) {
         console.log('CONSOLE: ' + msg + ' (from line #' + lineNum + ' in "' + sourceId + '")');
     };
-    page.open('http://development.aliceluke.divshot.io/' + user, function() {
+    page.open('http://aliceluke.divshot.io/' + user, function() {
         window.setTimeout(function(){
             page.render('phantom_' + user + '.png');
             page.close();

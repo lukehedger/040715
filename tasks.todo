@@ -1,10 +1,13 @@
 Live:
-    ☐ mailchimp - data and email
-    ☐ test analytics
+    ☐ push to live
+    ☐ run tests
+    ☐ test analytics on live
+    ☐ send email
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
 
+    ✔ mailchimp - data and email @done(2015-04-19 12:45) @project(Live)
     ✔ refine slide content/style - flowers @done(2015-04-18 20:31) @project(Invite)
     ✔ greeting content/style @done(2015-04-15 18:32) @project(Invite)
     ✔ slight mobile tweaks @done(2015-04-15 17:41) @project(Invite)
