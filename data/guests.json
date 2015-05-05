@@ -149,8 +149,8 @@
 	"fandk": {
 		"name": "Fergus & Kate"
 	},
-	"jandg": {
-		"name": "Jill & Gary"
+	"gandg": {
+		"name": "Gill & Gary"
 	},
 	"dandn": {
 		"name": "Diane & Norrie"
@@ -169,5 +169,8 @@
 	},
 	"landv": {
 		"name": "Line & Vinay"
+	},
+	"janda": {
+		"name": "Jess & Andrew"
 	}
 }
